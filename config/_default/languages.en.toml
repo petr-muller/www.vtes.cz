@@ -8,10 +8,10 @@ title = "Vampire: the Eternal Struggle"
   isoCode = "en"
   rtl = false
   dateFormat = "2 January 2006"
-  # logo = "img/logo.png"
+  footerLogo = "img/darkpack.png"
   # secondaryLogo = "img/secondary-logo.png"
-  description = "My awesome website"
-   copyright = "Portions of the materials are the copyrights and trademarks of Paradox Interactive AB, and are used with permission. All rights reserved. For more information please visit worldofdarkness.com."
+  description = "Czech community of Vampire: the Eternal Struggle CCG players"
+  copyright = "Portions of the materials are the copyrights and trademarks of Paradox Interactive AB, and are used with permission. All rights reserved. For more information please visit worldofdarkness.com."
 
 # [author]
 #   name = "Your name here"

@@ -1,14 +1,14 @@
 languageCode = "cs"
 languageName = "Czech"
 weight = 1
-title = "Vampire: the Eternal Struggle"
+title = "VtES CZ"
 
 [params]
   displayName = "CZ"
   isoCode = "cs"
   rtl = false
   dateFormat = "2 January 2006"
-  # logo = "img/logo.png"
+  footerLogo = "img/darkpack.png"
   # secondaryLogo = "img/secondary-logo.png"
   description = "Česká komunita hráčů karetní hry Vampire: the Eternal Struggle"
   copyright = "Části obsahu podléhají autorskému právu nebo ochranným známkám Paradox Interactive AB, a jsou užity se svolením. Všechna práva vyhrazena. Pro více informací navštivte worldofdarkness.com."
