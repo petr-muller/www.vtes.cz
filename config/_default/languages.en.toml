@@ -1,7 +1,7 @@
 languageCode = "en"
 languageName = "English"
 weight = 1
-title = "Vampire: the Eternal Struggle"
+title = ""
 
 [params]
   displayName = "EN"
@@ -13,11 +13,11 @@ title = "Vampire: the Eternal Struggle"
   description = "Czech community of Vampire: the Eternal Struggle CCG players"
   copyright = "Portions of the materials are the copyrights and trademarks of Paradox Interactive AB, and are used with permission. All rights reserved. For more information please visit worldofdarkness.com."
 
-# [author]
-#   name = "Your name here"
-#   image = "img/blowfish_logo.png"
-#   headline = "I'm only human"
-#   bio = "A little bit about you"
+[author]
+  name = "Vampire: the Eternal Struggle"
+  image = "img/vtes-cz-nationals.png"
+  headline = "Česká komunita hráčů karetní hry Vampire: the Eternal Struggle"
+  bio = "A little bit about you"
 #   links = [
 #     { email = "mailto:hello@your_domain.com" },
 #     { link = "https://link-to-some-website.com/" },
