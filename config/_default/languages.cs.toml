@@ -14,10 +14,10 @@ title = "Vampire: the Eternal Struggle"
   copyright = "Části obsahu podléhají autorskému právu nebo ochranným známkám Paradox Interactive AB, a jsou užity se svolením. Všechna práva vyhrazena. Pro více informací navštivte worldofdarkness.com."
 
 [author]
-   name = "Vampire: the Eternal Struggle"
-#   image = "img/blowfish_logo.png"
-    headline = "Česká komunita hráčů karetní hry Vampire: the Eternal Struggle"
-    bio = "A little bit about you"
+  name = "Vampire: the Eternal Struggle"
+  image = "img/vtes-cz-nationals.png"
+  headline = "Česká komunita hráčů karetní hry Vampire: the Eternal Struggle"
+  bio = "A little bit about you"
 #   links = [
 #     { email = "mailto:hello@your_domain.com" },
 #     { link = "https://link-to-some-website.com/" },
