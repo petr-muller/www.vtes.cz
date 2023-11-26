@@ -39,9 +39,9 @@ Města s aktivní komunitou mají svého místního koordinátora, tzv. prince. 
 {{< /timelineItem >}}
 
 {{< timelineItem icon="" header="Turnaje" >}}
-<p>České mistrovství republiky, nazvané <em>"Pulled Fang"</em> se tradičně koná na přelomu srpna a září.</p>
+<p>České mistrovství republiky, nazvané <strong>"Pulled Fang"</strong> se tradičně koná na přelomu srpna a září.</p>
 
-<p>Během roku princové jednotlivých měst organizují jednotlivé turnaje série <em>"Road to Pulled Fang"</em>, které dohromady tvoří mini-ligu. Hráči na horních místech hrají na turnaji Pulled Fang speciální finální hru o vítěztví v této lize:</p>
+<p>Během roku princové jednotlivých měst organizují jednotlivé turnaje série <strong>"Road to Pulled Fang"</strong>, které dohromady tvoří mini-ligu. Hráči na horních místech hrají na turnaji Pulled Fang speciální finále celé série:</p>
 
 <ul>
 <li><s><strong>Jihlava</strong>: 4. listopad 2023</s></li>
@@ -52,12 +52,19 @@ Města s aktivní komunitou mají svého místního koordinátora, tzv. prince. 
 <li><strong>Brno</strong>: Červen 2024</li>
 </ul>
 
-
-
 {{< /timelineItem >}}
 
 {{< timelineItem icon="" header="Další zdroje" >}}
- 
+
+<p><a href="https://www.vekn.net">V:EKN</a> (Vampire: Elder Kindred Network): hráčská organizace zastřešující (mimo
+ jiné) turnajové hraní. Naleznete zde např. <a href="https://www.vekn.net/rulebook">pravidla</a>,
+ <a href="https://www.vekn.net/event-calendar">kalendář turnajů</a> nebo
+ <a href="https://www.vekn.net/forum">fórum.</a>
+ </p>
+<p><a href="https://vdb.im/">VDB</a>: nástroj pro vyhledávání karet a stavbu, správu a prohlížení balíčků.</p>
+<p><a href="https://discord.gg/vampire-the-eternal-struggle-official-887471681277399091">VtES Discord Server</a>: oficiální Discord server</p>
+<p><a href="https://www.blackchantry.com/">Black Chantry</a>: aktuální vydavatel VtES.</a>
+
 {{< /timelineItem >}}
 
 {{< /timeline >}}
