@@ -18,11 +18,11 @@ Města s aktivní komunitou mají svého místního koordinátora, tzv. prince. 
 </p>
 
  {{< button href="https://www.vekn.net/vampire-elder-kindred-network/prince-list?country=CZ&sort=location" >}}
- Seznam princů v ČR
+ Seznam&nbsp;princů&nbsp;v&nbsp;ČR
  {{< /button >}}
  &nbsp;
  {{< button href="https://www.facebook.com/groups/846126335924848" >}}
-   FB skupina
+   FB&nbsp;skupina
  {{< /button >}}
 
 <p>Pro vyzkoušení hry jsou vhodné tzv. <a href="https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/new-blood-introductory-decks-for-vampire-the-eternal-struggle/">New Blood</a>
@@ -32,11 +32,11 @@ Města s aktivní komunitou mají svého místního koordinátora, tzv. prince. 
  </p>
 
  {{< button href="https://vtes.store/" >}}
-  vtes.store (PL)
+  vtes.store&nbsp;(PL)
  {{< /button >}}
  &nbsp;
  {{< button href="https://blackchantry.shop/" >}}
-  Black Chantry Shop (UK/DK)
+  Black&nbsp;Chantry&nbsp;Shop&nbsp;(UK/DK)
  {{< /button >}}
 
 <p></p>

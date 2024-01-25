@@ -3,40 +3,40 @@ title: "Vampire: the Eternal Struggle"
 description: "SEPARATE DESCRIPTION"
 ---
 
-**Vampire: the Eternal Struggle** je sběratelská karetní hra navržená v roce 1994 Richardem Garfieldem.
-Oproti jiným karetním hrám je primárně určena pro více hráčů (nejlépe 5 či 4). Hra se odehrává ve Světě temnoty
- ([World of Darkness](www.worldofdarkness.com)) a založena je na konceptech z RPG hry Vampire: the Masquerade.
+**Vampire: the Eternal Struggle** is a collectible card game designed by Richard Garfield in 1994. Unlike other card games,
+it is primarily designed for multiple players (four or five). The game takes place in the World of Darkness
+ ([World of Darkness](www.worldofdarkness.com)) and is based on the Vampire: the Masquerade RPG.
 
 {{< timeline >}}
-{{< timelineItem icon="" header="Jak začít" >}}
+{{< timelineItem icon="" header="How to start?" >}}
 
 <p>
-Města s aktivní komunitou mají svého místního koordinátora, tzv. prince. Jejich seznam naleznete na odkazu níže.
- Princ vás po kontaktu rád napojí na místní komunitu, případně vám poradí, zda se někde v okolí pravidelně hraje a kdy.
- Česká komunita se schází na Discord serveru; místní princ Vám rád pošle pozvánku. Částečně aktivní je také skupina na
- Facebooku.
+Cities with an active player base have a local coordinator, called the Prince. Follow the link below to discover
+ the list of Princes in the Czech Republic. A local Prince will happily connect you with the local community and point
+ you to the nearest playgroup, if there is one. The Czech community is active on Discord; a local Prince will be happy
+ to invite you. There is also a Facebook group, but most activity happens on Discord.
 </p>
 
  {{< button href="https://www.vekn.net/vampire-elder-kindred-network/prince-list?country=CZ&sort=location" >}}
- Seznam princů v ČR
+ Princes&nbsp;in&nbsp;Czechia
  {{< /button >}}
  &nbsp;
  {{< button href="https://www.facebook.com/groups/846126335924848" >}}
-   FB skupina
+   FB&nbsp;group
  {{< /button >}}
 
-<p>Pro vyzkoušení hry jsou vhodné tzv. <a href="https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/new-blood-introductory-decks-for-vampire-the-eternal-struggle/">New Blood</a>
- balíčky; zmenšené, zjednodušené balíčky hratelné výhradně proti sobě navzájem. Následně jsou k dispozici plnohodnotné
- předpřipravené balíčky, tzv. <em>startery</em>. Obojí běžně prodávají obchody se sběratelskými karetními hrami. Mnoho
- hráčů využívá polský vtes.store nebo eshop aktuálního vydavatele VtES, Black Chantry.
+<p>To try out VtES, start with the <a href="https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/new-blood-introductory-decks-for-vampire-the-eternal-struggle/">New Blood</a>
+decks. These are simplified, smaller decks playable designed to introduce new players to the game and showcase the game
+mechanics. After that, you can move on to the full-fledged preconstructed <em>starter</em> decks. You can buy these products
+in you local game store or online. Many Czech players use the Polish vtes.store or the Black Chantry webshop.
  </p>
 
  {{< button href="https://vtes.store/" >}}
-  vtes.store (PL)
+  vtes.store&nbsp;(PL)
  {{< /button >}}
  &nbsp;
  {{< button href="https://blackchantry.shop/" >}}
-  Black Chantry Shop (UK/DK)
+  Black&nbsp;Chantry&nbsp;Shop&nbsp;(UK/DK)
  {{< /button >}}
 
 <p></p>
@@ -44,31 +44,32 @@ Města s aktivní komunitou mají svého místního koordinátora, tzv. prince. 
 {{< /timelineItem >}}
 
 {{< timelineItem icon="" header="Turnaje" >}}
-<p>České mistrovství republiky, nazvané <strong>"Pulled Fang"</strong> se tradičně koná na přelomu srpna a září.</p>
 
-<p>Během roku princové jednotlivých měst organizují jednotlivé turnaje série <strong>"Road to Pulled Fang"</strong>, které dohromady tvoří mini-ligu. Hráči na horních místech hrají na turnaji Pulled Fang speciální finále celé série:</p>
+<p>Czech national championship, called <strong>"Pulled Fang"</strong>, is traditionally held between August and September.</p>
+
+<p>Tournaments of the <strong>"Road to Pulled Fang"</strong> series are organized by local Princes throughout the year.
+The top players of the series play a special finals held at the Pulled Fang tournament:</p>
 
 <ul>
-<li><s><strong>Jihlava</strong>: 4. listopad 2023</s> (<a href="https://www.vekn.net/event-calendar/event/11028">výsledky</a>)</li>
-<li><s><strong>Praha</strong>: 14. leden 2024</s> (<a href="https://www.vekn.net/event-calendar/event/11181">výsledky</a>)</li>
-<li><strong>Ostrava</strong>: Březen 2024</li>
-<li><strong>Lichnov</strong>: Březen 2024</li>
-<li><strong>Hradec Králové</strong>: Duben/Květen 2024</li>
-<li><strong>Brno</strong>: Červen 2024</li>
+<li><s><strong>Jihlava</strong>: November 4th 2023</s> (<a href="https://www.vekn.net/event-calendar/event/11028">výsledky</a>)</li>
+<li><s><strong>Praha</strong>: January 14th 2024</s> (<a href="https://www.vekn.net/event-calendar/event/11181">výsledky</a>)</li>
+<li><strong>Ostrava</strong>: March 2024</li>
+<li><strong>Lichnov</strong>: March 2024</li>
+<li><strong>Hradec Králové</strong>: April/May 2024</li>
+<li><strong>Brno</strong>: June 2024</li>
 </ul>
 
 {{< /timelineItem >}}
 
-{{< timelineItem icon="" header="Další zdroje" >}}
+{{< timelineItem icon="" header="Resources" >}}
 
-<p><a href="https://www.vekn.net">V:EKN</a> (Vampire: Elder Kindred Network): hráčská organizace zastřešující (mimo
- jiné) turnajové hraní. Naleznete zde např. <a href="https://www.vekn.net/rulebook">pravidla</a>,
- <a href="https://www.vekn.net/event-calendar">kalendář turnajů</a> nebo
- <a href="https://www.vekn.net/forum">fórum.</a>
+<p><a href="https://www.vekn.net">V:EKN</a> (Vampire: Elder Kindred Network): player organization that sanctions organized play. You can find there the<a href="https://www.vekn.net/rulebook">rulebook</a>,
+ <a href="https://www.vekn.net/event-calendar">tournament schedule</a> or a
+ <a href="https://www.vekn.net/forum">discussion forum.</a>
  </p>
-<p><a href="https://vdb.im/">VDB</a>: nástroj pro vyhledávání karet a stavbu, správu a prohlížení balíčků</p>
-<p><a href="https://discord.gg/vampire-the-eternal-struggle-official-887471681277399091">VtES Discord Server</a>: oficiální Discord server</p>
-<p><a href="https://www.blackchantry.com/">Black Chantry</a>: aktuální vydavatel VtES</p>
+<p><a href="https://vdb.im/">VDB</a>: deckbuilding tool and card database</p>
+<p><a href="https://discord.gg/vampire-the-eternal-struggle-official-887471681277399091">official VtES Discord server</a>: oficiální Discord server</p>
+<p><a href="https://www.blackchantry.com/">Black Chantry</a>: current VtES publisher</p>
 
 {{< /timelineItem >}}
 
