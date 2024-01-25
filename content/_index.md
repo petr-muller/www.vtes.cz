@@ -13,11 +13,16 @@ Oproti jiným karetním hrám je primárně určena pro více hráčů (nejlépe
 <p>
 Města s aktivní komunitou mají svého místního koordinátora, tzv. prince. Jejich seznam naleznete na odkazu níže.
  Princ vás po kontaktu rád napojí na místní komunitu, případně vám poradí, zda se někde v okolí pravidelně hraje a kdy.
- Česká komunita se schází na Discord serveru; místní princ Vám rád pošle pozvánku.
+ Česká komunita se schází na Discord serveru; místní princ Vám rád pošle pozvánku. Částečně aktivní je také skupina na
+ Facebooku.
 </p>
- 
+
  {{< button href="https://www.vekn.net/vampire-elder-kindred-network/prince-list?country=CZ&sort=location" >}}
  Seznam princů v ČR
+ {{< /button >}}
+ &nbsp;
+ {{< button href="https://www.facebook.com/groups/846126335924848" >}}
+   FB skupina
  {{< /button >}}
 
 <p>Pro vyzkoušení hry jsou vhodné tzv. <a href="https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/new-blood-introductory-decks-for-vampire-the-eternal-struggle/">New Blood</a>
@@ -25,7 +30,7 @@ Města s aktivní komunitou mají svého místního koordinátora, tzv. prince. 
  předpřipravené balíčky, tzv. <em>startery</em>. Obojí běžně prodávají obchody se sběratelskými karetními hrami. Mnoho
  hráčů využívá polský vtes.store nebo eshop aktuálního vydavatele VtES, Black Chantry.
  </p>
- 
+
  {{< button href="https://vtes.store/" >}}
   vtes.store (PL)
  {{< /button >}}
@@ -44,9 +49,9 @@ Města s aktivní komunitou mají svého místního koordinátora, tzv. prince. 
 <p>Během roku princové jednotlivých měst organizují jednotlivé turnaje série <strong>"Road to Pulled Fang"</strong>, které dohromady tvoří mini-ligu. Hráči na horních místech hrají na turnaji Pulled Fang speciální finále celé série:</p>
 
 <ul>
-<li><s><strong>Jihlava</strong>: 4. listopad 2023</s></li>
-<li><strong>Praha</strong>: Leden 2024</li>
-<li><strong>Ostrava</strong>: Únor 2024</li>
+<li><s><strong>Jihlava</strong>: 4. listopad 2023</s> (<a href="https://www.vekn.net/event-calendar/event/11028">výsledky</a>)</li>
+<li><s><strong>Praha</strong>: 14. leden 2024</s> (<a href="https://www.vekn.net/event-calendar/event/11181">výsledky</a>)</li>
+<li><strong>Ostrava</strong>: Březen 2024</li>
 <li><strong>Lichnov</strong>: Březen 2024</li>
 <li><strong>Hradec Králové</strong>: Duben/Květen 2024</li>
 <li><strong>Brno</strong>: Červen 2024</li>
@@ -61,9 +66,9 @@ Města s aktivní komunitou mají svého místního koordinátora, tzv. prince. 
  <a href="https://www.vekn.net/event-calendar">kalendář turnajů</a> nebo
  <a href="https://www.vekn.net/forum">fórum.</a>
  </p>
-<p><a href="https://vdb.im/">VDB</a>: nástroj pro vyhledávání karet a stavbu, správu a prohlížení balíčků.</p>
+<p><a href="https://vdb.im/">VDB</a>: nástroj pro vyhledávání karet a stavbu, správu a prohlížení balíčků</p>
 <p><a href="https://discord.gg/vampire-the-eternal-struggle-official-887471681277399091">VtES Discord Server</a>: oficiální Discord server</p>
-<p><a href="https://www.blackchantry.com/">Black Chantry</a>: aktuální vydavatel VtES.</a>
+<p><a href="https://www.blackchantry.com/">Black Chantry</a>: aktuální vydavatel VtES</p>
 
 {{< /timelineItem >}}
 
