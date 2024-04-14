@@ -4,7 +4,7 @@ description: "SEPARATE DESCRIPTION"
 ---
 
 **Vampire: the Eternal Struggle** is a collectible card game designed by Richard Garfield in 1994. Unlike other card games,
-it is primarily designed for multiple players (four or five). The game takes place in the World of Darkness
+it is primarily designed for multiple players, ideally five or four. The game takes place in the World of Darkness
  ([World of Darkness](www.worldofdarkness.com)) and is based on the Vampire: the Masquerade RPG.
 
 {{< timeline >}}
@@ -43,19 +43,19 @@ in you local game store or online. Many Czech players use the Polish vtes.store 
 
 {{< /timelineItem >}}
 
-{{< timelineItem icon="" header="Turnaje" >}}
+{{< timelineItem icon="" header="Tournaments" >}}
 
 <p>Czech national championship, called <strong>"Pulled Fang"</strong>, is traditionally held between August and September.</p>
 
-<p>Tournaments of the <strong>"Road to Pulled Fang"</strong> series are organized by local Princes throughout the year.
+<p>Local princes organize individual tournaments of the <strong>"Road to Pulled Fang"</strong> throughout the year.
 The top players of the series play a special finals held at the Pulled Fang tournament:</p>
 
 <ul>
-<li><s><strong>Jihlava</strong>: November 4th 2023</s> (<a href="https://www.vekn.net/event-calendar/event/11028">výsledky</a>)</li>
-<li><s><strong>Praha</strong>: January 14th 2024</s> (<a href="https://www.vekn.net/event-calendar/event/11181">výsledky</a>)</li>
-<li><strong>Ostrava</strong>: March 2024</li>
-<li><strong>Lichnov</strong>: March 2024</li>
-<li><strong>Hradec Králové</strong>: April/May 2024</li>
+<li><s><strong>Jihlava</strong>: November 4th 2023</s> (<a href="https://www.vekn.net/event-calendar/event/11028">results</a>)</li>
+<li><s><strong>Praha</strong>: January 14th 2024</s> (<a href="https://www.vekn.net/event-calendar/event/11181">results</a>)</li>
+<li><s><strong>Ostrava</strong>: March 2024</s> (cancelled)</li>
+<li><s><strong>Lichnov</strong>: March 23rd 2024</s> (<a href="https://www.vekn.net/event-calendar/event/11332">results</a>)</li>
+<li><strong>Hradec Králové</strong>: April 27th 2024 (<a href="https://www.vekn.net/event-calendar/event/11387">info</a>)</li>
 <li><strong>Brno</strong>: June 2024</li>
 </ul>
 
