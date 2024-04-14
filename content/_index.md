@@ -4,8 +4,8 @@ description: "SEPARATE DESCRIPTION"
 ---
 
 **Vampire: the Eternal Struggle** je sběratelská karetní hra navržená v roce 1994 Richardem Garfieldem.
-Oproti jiným karetním hrám je primárně určena pro více hráčů (nejlépe 5 či 4). Hra se odehrává ve Světě temnoty
- ([World of Darkness](www.worldofdarkness.com)) a založena je na konceptech z RPG hry Vampire: the Masquerade.
+Oproti jiným karetním hrám je primárně určena pro více hráčů, nejlépe 5 či 4. Hra se odehrává ve Světě temnoty
+ ([World of Darkness](https://www.worldofdarkness.com)) a založena je na konceptech z RPG hry Vampire: the Masquerade.
 
 {{< timeline >}}
 {{< timelineItem icon="" header="Jak začít" >}}
@@ -51,9 +51,9 @@ Města s aktivní komunitou mají svého místního koordinátora, tzv. prince. 
 <ul>
 <li><s><strong>Jihlava</strong>: 4. listopad 2023</s> (<a href="https://www.vekn.net/event-calendar/event/11028">výsledky</a>)</li>
 <li><s><strong>Praha</strong>: 14. leden 2024</s> (<a href="https://www.vekn.net/event-calendar/event/11181">výsledky</a>)</li>
-<li><strong>Ostrava</strong>: Březen 2024</li>
-<li><strong>Lichnov</strong>: Březen 2024</li>
-<li><strong>Hradec Králové</strong>: Duben/Květen 2024</li>
+<li><s><strong>Ostrava</strong>: Březen 2024</s> (zrušeno)</li>
+<li><s><strong>Lichnov</strong>: 23. březen 2024</s> (<a href="https://www.vekn.net/event-calendar/event/11332">výsledky</a>)</li>
+<li><strong>Hradec Králové</strong>: 27. duben 2024 (<a href="https://www.vekn.net/event-calendar/event/11387">info</a>)</li>
 <li><strong>Brno</strong>: Červen 2024</li>
 </ul>
 
