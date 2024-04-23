@@ -13,10 +13,12 @@ Oproti jiným karetním hrám je primárně určena pro více hráčů, nejlépe
 <p>
 Města s aktivní komunitou mají svého místního koordinátora, tzv. prince. Jejich seznam naleznete na odkazu níže.
  Princ vás po kontaktu rád napojí na místní komunitu, případně vám poradí, zda se někde v okolí pravidelně hraje a kdy.
- Česká komunita se schází na Discord serveru; místní princ Vám rád pošle pozvánku. Částečně aktivní je také skupina na
- Facebooku.
+ Česká komunita se schází na Discord serveru. Částečně aktivní je také skupina na Facebooku.
 </p>
-
+ {{< button href="https://discord.gg/3WU6SsKGCY" >}}
+ Discord&nbsp;server
+ {{< /button >}}
+ &nbsp;
  {{< button href="https://www.vekn.net/vampire-elder-kindred-network/prince-list?country=CZ&sort=location" >}}
  Seznam&nbsp;princů&nbsp;v&nbsp;ČR
  {{< /button >}}
@@ -54,7 +56,7 @@ Města s aktivní komunitou mají svého místního koordinátora, tzv. prince. 
 <li><s><strong>Ostrava</strong>: Březen 2024</s> (zrušeno)</li>
 <li><s><strong>Lichnov</strong>: 23. březen 2024</s> (<a href="https://www.vekn.net/event-calendar/event/11332">výsledky</a>)</li>
 <li><strong>Hradec Králové</strong>: 27. duben 2024 (<a href="https://www.vekn.net/event-calendar/event/11387">info</a>)</li>
-<li><strong>Brno</strong>: Červen 2024</li>
+<li><strong>Brno</strong>: 15. červen 2024 (<a href="https://www.vekn.net/event-calendar/event/11419">info</a>)</li>
 </ul>
 
 {{< /timelineItem >}}

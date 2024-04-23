@@ -13,10 +13,14 @@ it is primarily designed for multiple players, ideally five or four. The game ta
 <p>
 Cities with an active player base have a local coordinator, called the Prince. Follow the link below to discover
  the list of Princes in the Czech Republic. A local Prince will happily connect you with the local community and point
- you to the nearest playgroup, if there is one. The Czech community is active on Discord; a local Prince will be happy
- to invite you. There is also a Facebook group, but most activity happens on Discord.
+ you to the nearest playgroup, if there is one. The Czech community is active on Discord. There is also a Facebook
+ group, but most activity happens on Discord.
 </p>
 
+ {{< button href="https://discord.gg/3WU6SsKGCY" >}}
+ Discord&nbsp;server
+ {{< /button >}}
+ &nbsp;
  {{< button href="https://www.vekn.net/vampire-elder-kindred-network/prince-list?country=CZ&sort=location" >}}
  Princes&nbsp;in&nbsp;Czechia
  {{< /button >}}
@@ -56,7 +60,7 @@ The top players of the series play a special finals held at the Pulled Fang tour
 <li><s><strong>Ostrava</strong>: March 2024</s> (cancelled)</li>
 <li><s><strong>Lichnov</strong>: March 23rd 2024</s> (<a href="https://www.vekn.net/event-calendar/event/11332">results</a>)</li>
 <li><strong>Hradec Králové</strong>: April 27th 2024 (<a href="https://www.vekn.net/event-calendar/event/11387">info</a>)</li>
-<li><strong>Brno</strong>: June 2024</li>
+<li><strong>Brno</strong>: June 15th 2024 (<a href="https://www.vekn.net/event-calendar/event/11419">info</a>)</li>
 </ul>
 
 {{< /timelineItem >}}
