@@ -67,12 +67,12 @@ The top players of the series play a special finals held at the Pulled Fang tour
 
 {{< timelineItem icon="" header="Resources" >}}
 
-<p><a href="https://www.vekn.net">V:EKN</a> (Vampire: Elder Kindred Network): player organization that sanctions organized play. You can find there the<a href="https://www.vekn.net/rulebook">rulebook</a>,
- <a href="https://www.vekn.net/event-calendar">tournament schedule</a> or a
+<p><a href="https://www.vekn.net">V:EKN</a> (Vampire: Elder Kindred Network): player organization that sanctions organized play. You can find there the <a href="https://www.vekn.net/rulebook">rulebook</a>,
+ <a href="https://www.vekn.net/event-calendar">tournament calendar</a> or a
  <a href="https://www.vekn.net/forum">discussion forum.</a>
  </p>
 <p><a href="https://vdb.im/">VDB</a>: deckbuilding tool and card database</p>
-<p><a href="https://discord.gg/vampire-the-eternal-struggle-official-887471681277399091">official VtES Discord server</a>: oficiální Discord server</p>
+<p><a href="https://discord.gg/vampire-the-eternal-struggle-official-887471681277399091">VtES Discord server</a>: official V:EKN Discord server</p>
 <p><a href="https://www.blackchantry.com/">Black Chantry</a>: current VtES publisher</p>
 
 {{< /timelineItem >}}
