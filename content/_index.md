@@ -1,6 +1,6 @@
 ---
 title: "Vampire: the Eternal Struggle"
-description: "SEPARATE DESCRIPTION"
+description: "Česká komunita hráčů karetní hry Vampire: the Eternal Struggle"
 ---
 
 **Vampire: the Eternal Struggle** je sběratelská karetní hra navržená v roce 1994 Richardem Garfieldem.

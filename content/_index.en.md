@@ -1,6 +1,6 @@
 ---
 title: "Vampire: the Eternal Struggle"
-description: "SEPARATE DESCRIPTION"
+description: "Community of the Vampire: the Eternal Struggle CCG players in the Czech Republic"
 ---
 
 **Vampire: the Eternal Struggle** is a collectible card game designed by Richard Garfield in 1994. Unlike other card games,
