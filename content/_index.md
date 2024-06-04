@@ -47,7 +47,7 @@ Města s aktivní komunitou mají svého místního koordinátora, tzv. prince. 
 
 <p>Na základní seznámení s pravidly je k dispozici desetiminutový video tutoriál s českými titulky.</p>
 
-{{< youtubeLite id="J6HyIxIzHcA" label="Blowfish-tools demo" params="cc_load_policy=1&cc_lang_pref=cs">}}
+{{< youtubeLite id="J6HyIxIzHcA" label="Codex KRCG: VtES Tutoriál" params="cc_load_policy=1&cc_lang_pref=cs">}}
 
 {{< /timelineItem >}}
 

@@ -53,11 +53,9 @@ in you local game store or online. Many Czech players use the Polish vtes.store 
 To get familiar with the basic rules, watch the following 10-minute video tutorial.
 </p>
 
-{{< youtubeLite id="J6HyIxIzHcA" label="Blowfish-tools demo" >}}
+{{< youtubeLite id="J6HyIxIzHcA" label="Codex KRCG: VtES Tutorial" >}}
 
 {{< /timelineItem >}}
-
-
 
 {{< timelineItem icon="" header="Tournaments" >}}
 
