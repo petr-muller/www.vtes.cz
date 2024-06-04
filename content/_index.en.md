@@ -3,12 +3,19 @@ title: "Vampire: the Eternal Struggle"
 description: "Community of the Vampire: the Eternal Struggle CCG players in the Czech Republic"
 ---
 
-**Vampire: the Eternal Struggle** is a collectible card game designed by Richard Garfield in 1994. Unlike other card games,
+**Vampire: the Eternal Struggle** (VtES) is a collectible card game designed by Richard Garfield in 1994. Unlike other card games,
 it is primarily designed for multiple players, ideally five or four. The game takes place in the World of Darkness
  ([World of Darkness](www.worldofdarkness.com)) and is based on the Vampire: the Masquerade RPG.
 
 {{< timeline >}}
 {{< timelineItem icon="" header="How to start?" >}}
+
+<p>
+To get familiar with the basic rules, watch the following 10-minute video tutorial.
+</p>
+ {{< button https://www.youtube.com/watch?v=J6HyIxIzHcA&ab_channel=CodexKRCG" >}}
+ VtES&nbsp;tutorial&nbsp;(YouTube)
+ {{< /button >}}
 
 <p>
 Cities with an active player base have a local coordinator, called the Prince. Follow the link below to discover

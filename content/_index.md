@@ -3,12 +3,19 @@ title: "Vampire: the Eternal Struggle"
 description: "Česká komunita hráčů karetní hry Vampire: the Eternal Struggle"
 ---
 
-**Vampire: the Eternal Struggle** je sběratelská karetní hra navržená v roce 1994 Richardem Garfieldem.
+**Vampire: the Eternal Struggle** (VtES) je sběratelská karetní hra navržená v roce 1994 Richardem Garfieldem.
 Oproti jiným karetním hrám je primárně určena pro více hráčů, nejlépe 5 či 4. Hra se odehrává ve Světě temnoty
  ([World of Darkness](https://www.worldofdarkness.com)) a založena je na konceptech z RPG hry Vampire: the Masquerade.
 
 {{< timeline >}}
 {{< timelineItem icon="" header="Jak začít" >}}
+
+<p>
+Na základní seznámení s pravidly je k dispozici desetiminutový video tutoriál s českými titulky.
+</p>
+ {{< button https://www.youtube.com/watch?v=J6HyIxIzHcA&ab_channel=CodexKRCG" >}}
+ VtES&nbsp;tutoriál&nbsp;(YouTube)
+ {{< /button >}}
 
 <p>
 Města s aktivní komunitou mají svého místního koordinátora, tzv. prince. Jejich seznam naleznete na odkazu níže.
