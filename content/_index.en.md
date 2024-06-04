@@ -11,13 +11,6 @@ it is primarily designed for multiple players, ideally five or four. The game ta
 {{< timelineItem icon="" header="How to start?" >}}
 
 <p>
-To get familiar with the basic rules, watch the following 10-minute video tutorial.
-</p>
- {{< button https://www.youtube.com/watch?v=J6HyIxIzHcA&ab_channel=CodexKRCG" >}}
- VtES&nbsp;tutorial&nbsp;(YouTube)
- {{< /button >}}
-
-<p>
 Cities with an active player base have a local coordinator, called the Prince. Follow the link below to discover
  the list of Princes in the Czech Republic. A local Prince will happily connect you with the local community and point
  you to the nearest playgroup, if there is one. The Czech community is active on Discord. There is also a Facebook
@@ -53,6 +46,18 @@ in you local game store or online. Many Czech players use the Polish vtes.store 
 <p></p>
 
 {{< /timelineItem >}}
+
+{{< timelineItem icon="" header="Tutorial" >}}
+
+<p>
+To get familiar with the basic rules, watch the following 10-minute video tutorial.
+</p>
+
+{{< youtubeLite id="J6HyIxIzHcA" label="Blowfish-tools demo" >}}
+
+{{< /timelineItem >}}
+
+
 
 {{< timelineItem icon="" header="Tournaments" >}}
 

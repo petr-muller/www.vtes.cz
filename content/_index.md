@@ -11,13 +11,6 @@ Oproti jiným karetním hrám je primárně určena pro více hráčů, nejlépe
 {{< timelineItem icon="" header="Jak začít" >}}
 
 <p>
-Na základní seznámení s pravidly je k dispozici desetiminutový video tutoriál s českými titulky.
-</p>
- {{< button https://www.youtube.com/watch?v=J6HyIxIzHcA&ab_channel=CodexKRCG" >}}
- VtES&nbsp;tutoriál&nbsp;(YouTube)
- {{< /button >}}
-
-<p>
 Města s aktivní komunitou mají svého místního koordinátora, tzv. prince. Jejich seznam naleznete na odkazu níže.
  Princ vás po kontaktu rád napojí na místní komunitu, případně vám poradí, zda se někde v okolí pravidelně hraje a kdy.
  Česká komunita se schází na Discord serveru. Částečně aktivní je také skupina na Facebooku.
@@ -48,7 +41,13 @@ Města s aktivní komunitou mají svého místního koordinátora, tzv. prince. 
   Black&nbsp;Chantry&nbsp;Shop&nbsp;(UK/DK)
  {{< /button >}}
 
-<p></p>
+{{< /timelineItem >}}
+
+{{< timelineItem icon="" header="Tutoriál" >}}
+
+<p>Na základní seznámení s pravidly je k dispozici desetiminutový video tutoriál s českými titulky.</p>
+
+{{< youtubeLite id="J6HyIxIzHcA" label="Blowfish-tools demo" params="cc_load_policy=1&cc_lang_pref=cs">}}
 
 {{< /timelineItem >}}
 
