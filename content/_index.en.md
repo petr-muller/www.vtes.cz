@@ -71,7 +71,7 @@ The top players of the series play a special finals held at the Pulled Fang tour
 <li><s><strong>Praha</strong>: January 14th 2024</s> (<a href="https://www.vekn.net/event-calendar/event/11181">results</a>)</li>
 <li><s><strong>Ostrava</strong>: March 2024</s> (cancelled)</li>
 <li><s><strong>Lichnov</strong>: March 23rd 2024</s> (<a href="https://www.vekn.net/event-calendar/event/11332">results</a>)</li>
-<li><strong>Hradec Králové</strong>: April 27th 2024 (<a href="https://www.vekn.net/event-calendar/event/11387">info</a>)</li>
+<li><s><strong>Hradec Králové</strong>: April 27th 2024</s> (<a href="https://www.vekn.net/event-calendar/event/11387">results</a>)</li>
 <li><strong>Brno</strong>: June 15th 2024 (<a href="https://www.vekn.net/event-calendar/event/11419">info</a>)</li>
 </ul>
 

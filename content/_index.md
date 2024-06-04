@@ -61,7 +61,7 @@ Města s aktivní komunitou mají svého místního koordinátora, tzv. prince. 
 <li><s><strong>Praha</strong>: 14. leden 2024</s> (<a href="https://www.vekn.net/event-calendar/event/11181">výsledky</a>)</li>
 <li><s><strong>Ostrava</strong>: Březen 2024</s> (zrušeno)</li>
 <li><s><strong>Lichnov</strong>: 23. březen 2024</s> (<a href="https://www.vekn.net/event-calendar/event/11332">výsledky</a>)</li>
-<li><strong>Hradec Králové</strong>: 27. duben 2024 (<a href="https://www.vekn.net/event-calendar/event/11387">info</a>)</li>
+<li><s><strong>Hradec Králové</strong>: 27. duben 2024</s> (<a href="https://www.vekn.net/event-calendar/event/11387">výsledky</a>)</li>
 <li><strong>Brno</strong>: 15. červen 2024 (<a href="https://www.vekn.net/event-calendar/event/11419">info</a>)</li>
 </ul>
 
