@@ -55,13 +55,13 @@ Města s aktivní komunitou mají svého místního koordinátora, tzv. prince. 
 <p>České mistrovství republiky, nazvané <strong>"Pulled Fang"</strong> se tradičně koná na přelomu srpna a září.</p>
 
 <ul>
-<li><strong>Pulled Fang #13</strong>: 5-7. září 2025, Sázava, Nový Rychnov<!-- (<a href="https://www.facebook.com/events/825185032875096">FB</a>)--></li>
+<li><strong>Pulled Fang #14</strong>: 5-7. září 2025, Sázava, Nový Rychnov<!-- (<a href="https://www.facebook.com/events/825185032875096">FB</a>)--></li>
 </ul>
 
 <p>Během roku princové jednotlivých měst organizují jednotlivé turnaje série <strong>"Road to Pulled Fang"</strong>, které dohromady tvoří mini-ligu. Hráči na horních místech hrají na turnaji Pulled Fang speciální finále celé série:</p>
 
 <ul>
-<li><strong>Jihlava</strong>: 26. říjen 2024 (<a href="https://www.vekn.net/event-calendar/event/11028">výsledky</a>)</li>
+<li><s><strong>Jihlava</strong>: 26. říjen 2024</s>(<a href="https://www.vekn.net/event-calendar/event/11763">výsledky</a>)</li>
 <li><strong>Praha</strong>: Prosinec 2024<!-- (<a href="https://www.vekn.net/event-calendar/event/11181">výsledky</a>)--></li>
 <li><strong>Lichnov</strong>: Únor/Březen 2025<!-- (<a href="https://www.vekn.net/event-calendar/event/11332">výsledky</a>)--></li>
 <li><strong>Hradec Králové</strong>: Duben 2025<!-- (<a href="https://www.vekn.net/event-calendar/event/11387">výsledky</a>)--></li>
