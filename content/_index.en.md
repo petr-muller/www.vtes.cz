@@ -62,20 +62,19 @@ To get familiar with the basic rules, watch the following 10-minute video tutori
 <p>Czech national championship, called <strong>"Pulled Fang"</strong>, is traditionally held between August and September.</p>
 
 <ul>
-<li><strong>Pulled Fang #13</strong>: September 6-8th , Sázava, Nový Rychnov (<a href="https://www.facebook.com/events/825185032875096">FB</a>)</li>
+<li><strong>Pulled Fang #14</strong>: September 5-7th 2025, Sázava, Nový Rychnov<!--(<a href="https://www.facebook.com/events/825185032875096">FB</a>)--></li>
 </ul>
 
 <p>Local princes organize individual tournaments of the <strong>"Road to Pulled Fang"</strong> throughout the year.
 The top players of the series play a special finals held at the Pulled Fang tournament:</p>
 
 <ul>
-<li><s><strong>Jihlava</strong>: November 4th 2023</s> (<a href="https://www.vekn.net/event-calendar/event/11028">results</a>)</li>
-<li><s><strong>Praha</strong>: January 14th 2024</s> (<a href="https://www.vekn.net/event-calendar/event/11181">results</a>)</li>
-<li><s><strong>Ostrava</strong>: March 2024</s> (cancelled, Additional Strike held instead in HK in July)</li>
-<li><s><strong>Lichnov</strong>: March 23rd 2024</s> (<a href="https://www.vekn.net/event-calendar/event/11332">results</a>)</li>
-<li><s><strong>Hradec Králové</strong>: April 27th 2024</s> (<a href="https://www.vekn.net/event-calendar/event/11387">results</a>)</li>
-<li><s><strong>Brno</strong>: June 15th 2024</s> (<a href="https://www.vekn.net/event-calendar/event/11419">results</a>)</li>
-<li><s><strong>Hradec Králové: Additional Strike</strong>: July 20th 2024</s> (<a href="https://www.vekn.net/event-calendar/event/11495">results</a>)</li>
+<li><s><strong>Jihlava</strong>: October 26th 2024</s> (<a href="https://www.vekn.net/event-calendar/event/11763">results</a>)</li>
+<li><strong>Praha</strong>: December 2024<!-- (<a href="https://www.vekn.net/event-calendar/event/xxx">results</a>)--></li>
+<li><strong>Lichnov</strong>: February/March 2025<!-- (<a href="https://www.vekn.net/event-calendar/event/xxx">results</a>)--></li>
+<li><strong>Hradec Králové</strong>: April 2025<!-- (<a href="https://www.vekn.net/event-calendar/event/xxx">results</a>)--></li>
+<li><strong>Olomouc</strong>: May 2025<!-- (<a href="https://www.vekn.net/event-calendar/event/xxx">results</a>)--> </li>
+<li><strong>Brno</strong>: June 2025 <!--(<a href="https://www.vekn.net/event-calendar/event/xxx">results</a>)--></li>
 </ul>
 
 {{< /timelineItem >}}
