@@ -70,7 +70,7 @@ The top players of the series play a special finals held at the Pulled Fang tour
 
 <ul>
 <li><s><strong>Jihlava</strong>: October 26th 2024</s> (<a href="https://www.vekn.net/event-calendar/event/11763">results</a>)</li>
-<li><strong>Praha</strong>: December 2024<!-- (<a href="https://www.vekn.net/event-calendar/event/xxx">results</a>)--></li>
+<li><s><strong>Prague</strong>: January 11th 2025</s> (<a href="https://www.vekn.net/event-calendar/event/11952">results</a>)</li>
 <li><strong>Lichnov</strong>: February/March 2025<!-- (<a href="https://www.vekn.net/event-calendar/event/xxx">results</a>)--></li>
 <li><strong>Hradec Králové</strong>: April 2025<!-- (<a href="https://www.vekn.net/event-calendar/event/xxx">results</a>)--></li>
 <li><strong>Olomouc</strong>: May 2025<!-- (<a href="https://www.vekn.net/event-calendar/event/xxx">results</a>)--> </li>
