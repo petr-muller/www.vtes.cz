@@ -13,7 +13,7 @@ title = ""
   description = "Community of the Vampire: the Eternal Struggle CCG players in the Czech Republic"
   copyright = "Portions of the materials are the copyrights and trademarks of Paradox Interactive AB, and are used with permission. All rights reserved. For more information please visit worldofdarkness.com."
 
-[author]
+[params.author]
   name = "Vampire: the Eternal Struggle"
   image = "img/vtes-cz-nationals.png"
   headline = "Czech community of Vampire: the Eternal Struggle CCG players"

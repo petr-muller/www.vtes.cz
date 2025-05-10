@@ -13,7 +13,7 @@ title = ""
   description = "Česká komunita hráčů karetní hry Vampire: the Eternal Struggle"
   copyright = "Části obsahu podléhají autorskému právu nebo ochranným známkám Paradox Interactive AB, a jsou užity se svolením. Všechna práva vyhrazena. Pro více informací navštivte worldofdarkness.com."
 
-[author]
+[params.author]
   name = "Vampire: the Eternal Struggle"
   image = "img/vtes-cz-nationals.png"
   headline = "Česká komunita hráčů karetní hry Vampire: the Eternal Struggle"
