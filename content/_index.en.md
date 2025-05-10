@@ -72,9 +72,9 @@ The top players of the series play a special finals held at the Pulled Fang tour
 <li><s><strong>Jihlava</strong>: October 26th 2024</s> (<a href="https://www.vekn.net/event-calendar/event/11763">results</a>)</li>
 <li><s><strong>Prague</strong>: January 11th 2025</s> (<a href="https://www.vekn.net/event-calendar/event/11952">results</a>)</li>
 <li><s><strong>Lichnov</strong>: March 15th 2025</s> (<a href="https://www.vekn.net/event-calendar/event/12073">results</a>)</li>
-<li><strong>Hradec Králové</strong>: April 26th 2025 (<a href="https://www.vekn.net/event-calendar/event/12229">info</a>)</li>
-<li><strong>Olomouc</strong>: May 2025<!-- (<a href="https://www.vekn.net/event-calendar/event/xxx">results</a>)--> </li>
-<li><strong>Brno</strong>: June 2025 <!--(<a href="https://www.vekn.net/event-calendar/event/xxx">results</a>)--></li>
+<li><s><strong>Hradec Králové</strong>: April 26th 2025</s> (<a href="https://www.vekn.net/event-calendar/event/12229">results</a>)</li>
+<li><strong>Olomouc</strong>: May 31st 2025<!-- (<a href="https://www.vekn.net/event-calendar/event/xxx">results</a>)--> </li>
+<li><strong>Brno</strong>: June 21st 2025 (<a href="https://www.vekn.net/event-calendar/event/12357">info</a>)</li>
 </ul>
 
 {{< /timelineItem >}}
