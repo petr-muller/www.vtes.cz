@@ -62,7 +62,7 @@ To get familiar with the basic rules, watch the following 10-minute video tutori
 <p>Czech national championship, called <strong>"Pulled Fang"</strong>, is traditionally held between August and September.</p>
 
 <ul>
-<li><strong>Pulled Fang #14</strong>: September 5-7th 2025, Sázava, Nový Rychnov<!--(<a href="https://www.facebook.com/events/825185032875096">FB</a>)--></li>
+<li><strong>Pulled Fang #14</strong>: September 5-7th 2025, Sázava, Nový Rychnov&nbsp;(<a href="https://www.vekn.net/event-calendar/event/12421">VEKN</a>|<a href="https://www.facebook.com/events/700278652870661">FB</a>)</li>
 </ul>
 
 <p>Local princes organize individual tournaments of the <strong>"Road to Pulled Fang"</strong> throughout the year.
@@ -73,7 +73,7 @@ The top players of the series play a special finals held at the Pulled Fang tour
 <li><s><strong>Prague</strong>: January 11th 2025</s> (<a href="https://www.vekn.net/event-calendar/event/11952">results</a>)</li>
 <li><s><strong>Lichnov</strong>: March 15th 2025</s> (<a href="https://www.vekn.net/event-calendar/event/12073">results</a>)</li>
 <li><s><strong>Hradec Králové</strong>: April 26th 2025</s> (<a href="https://www.vekn.net/event-calendar/event/12229">results</a>)</li>
-<li><strong>Olomouc</strong>: May 31st 2025<!-- (<a href="https://www.vekn.net/event-calendar/event/xxx">results</a>)--> </li>
+<li><s><strong>Olomouc</strong>: May 31st 2025</s> (<a href="https://www.vekn.net/event-calendar/event/12358">results</a>)</li>
 <li><strong>Brno</strong>: June 21st 2025 (<a href="https://www.vekn.net/event-calendar/event/12357">info</a>)</li>
 </ul>
 

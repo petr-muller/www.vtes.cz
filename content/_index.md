@@ -56,7 +56,7 @@ Města s aktivní komunitou mají svého místního koordinátora, tzv. prince. 
 <p>České mistrovství republiky, nazvané <strong>"Pulled Fang"</strong> se tradičně koná na přelomu srpna a září.</p>
 
 <ul>
-<li><strong>Pulled Fang #14</strong>: 5-7. září 2025, Sázava, Nový Rychnov<!-- (<a href="https://www.facebook.com/events/825185032875096">FB</a>)--></li>
+<li><strong>Pulled Fang #14</strong>: 5-7. září 2025, Sázava, Nový Rychnov&nbsp;(<a href="https://www.vekn.net/event-calendar/event/12421">VEKN</a>|<a href="https://www.facebook.com/events/700278652870661">FB</a>)</li>
 </ul>
 
 <p>Během roku princové jednotlivých měst organizují jednotlivé turnaje série <strong>"Road to Pulled Fang"</strong>, které dohromady tvoří mini-ligu. Hráči na horních místech hrají na turnaji Pulled Fang speciální finále celé série:</p>
@@ -66,7 +66,7 @@ Města s aktivní komunitou mají svého místního koordinátora, tzv. prince. 
 <li><s><strong>Praha</strong>: 11. leden 2025</s> (<a href="https://www.vekn.net/event-calendar/event/11952">výsledky</a>)</li>
 <li><s><strong>Lichnov</strong>: 15. březen 2025</s> (<a href="https://www.vekn.net/event-calendar/event/12073">výsledky</a>)</li>
 <li><s><strong>Hradec Králové</strong>: 26. duben 2025</s> (<a href="https://www.vekn.net/event-calendar/event/12229">výsledky</a>)</li>
-<li><strong>Olomouc</strong>: 31. květen 2025<!-- (<a href="https://www.vekn.net/event-calendar/event/11419">výsledky</a>)--></li>
+<li><s><strong>Olomouc</strong>: 31. květen 2025</s> (<a href="https://www.vekn.net/event-calendar/event/12358">výsledky</a>)</li>
 <li><strong>Brno</strong>: 21. červen 2025 (<a href="https://www.vekn.net/event-calendar/event/12357">info</a>)</li>
 </ul>
 
