@@ -9,3 +9,5 @@ draft: false
 [Round 2](/6rtpf14-round2.png)
 
 [Round 3](/6rtpf14-round3.png)
+
+[Standings](/6rtpf14-standings.png)
