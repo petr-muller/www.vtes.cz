@@ -4,7 +4,7 @@ description: "6th Road to Pulled Fang #14 Tournament Results"
 draft: false
 ---
 
-[Round 1](/6rtpf14-round1.png)
+[Round 1](/6rtpf14-round1-x.png)
 
 [Round 2](/6rtpf14-round2.png)
 
