@@ -74,7 +74,7 @@ The top players of the series play a special finals held at the Pulled Fang tour
 <li><s><strong>Lichnov</strong>: March 15th 2025</s> (<a href="https://www.vekn.net/event-calendar/event/12073">results</a>)</li>
 <li><s><strong>Hradec Králové</strong>: April 26th 2025</s> (<a href="https://www.vekn.net/event-calendar/event/12229">results</a>)</li>
 <li><s><strong>Olomouc</strong>: May 31st 2025</s> (<a href="https://www.vekn.net/event-calendar/event/12358">results</a>)</li>
-<li><strong>Brno</strong>: June 21st 2025 (<a href="https://www.vekn.net/event-calendar/event/12357">info</a>)</li>
+<li><s><strong>Brno</strong>: June 21st 2025</s> (<a href="https://www.vekn.net/event-calendar/event/12357">results</a>)</li>
 </ul>
 
 {{< /timelineItem >}}

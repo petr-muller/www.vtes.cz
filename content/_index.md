@@ -67,7 +67,7 @@ Města s aktivní komunitou mají svého místního koordinátora, tzv. prince. 
 <li><s><strong>Lichnov</strong>: 15. březen 2025</s> (<a href="https://www.vekn.net/event-calendar/event/12073">výsledky</a>)</li>
 <li><s><strong>Hradec Králové</strong>: 26. duben 2025</s> (<a href="https://www.vekn.net/event-calendar/event/12229">výsledky</a>)</li>
 <li><s><strong>Olomouc</strong>: 31. květen 2025</s> (<a href="https://www.vekn.net/event-calendar/event/12358">výsledky</a>)</li>
-<li><strong>Brno</strong>: 21. červen 2025 (<a href="https://www.vekn.net/event-calendar/event/12357">info</a>)</li>
+<li><s><strong>Brno</strong>: 21. červen 2025</s> (<a href="https://www.vekn.net/event-calendar/event/12357">výsledky</a>)</li>
 </ul>
 
 {{< /timelineItem >}}
