@@ -56,7 +56,7 @@ Města s aktivní komunitou mají svého místního koordinátora, tzv. prince. 
 <p>České mistrovství republiky, nazvané <strong>"Pulled Fang"</strong> se tradičně koná na přelomu srpna a září.</p>
 
 <ul>
-<li><strong>Pulled Fang #14</strong>: 5-7. září 2025, Sázava, Nový Rychnov&nbsp;(<a href="https://www.vekn.net/event-calendar/event/12421">VEKN</a>|<a href="https://www.facebook.com/events/700278652870661">FB</a>)</li>
+<li><strong>Pulled Fang #15</strong>: 4-6. září 2026, Sázava, Nový Rychnov<!-- (<a href="https://www.vekn.net/event-calendar/event/12421">VEKN</a>|<a href="https://www.facebook.com/events/700278652870661">FB</a>)--></li>
 </ul>
 
 <p>Během roku princové jednotlivých měst organizují jednotlivé turnaje série <strong>"Road to Pulled Fang"</strong>, které dohromady tvoří mini-ligu. Hráči na horních místech hrají na turnaji Pulled Fang speciální finále celé série:</p>

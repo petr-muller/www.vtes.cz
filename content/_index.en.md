@@ -62,7 +62,7 @@ To get familiar with the basic rules, watch the following 10-minute video tutori
 <p>Czech national championship, called <strong>"Pulled Fang"</strong>, is traditionally held between August and September.</p>
 
 <ul>
-<li><strong>Pulled Fang #14</strong>: September 5-7th 2025, Sázava, Nový Rychnov&nbsp;(<a href="https://www.vekn.net/event-calendar/event/12421">VEKN</a>|<a href="https://www.facebook.com/events/700278652870661">FB</a>)</li>
+<li><strong>Pulled Fang #15</strong>: September 4-6th 2026, Sázava, Nový Rychnov<!-- (<a href="https://www.vekn.net/event-calendar/event/12421">VEKN</a>|<a href="https://www.facebook.com/events/700278652870661">FB</a>)--></li>
 </ul>
 
 <p>Local princes organize individual tournaments of the <strong>"Road to Pulled Fang"</strong> throughout the year.
