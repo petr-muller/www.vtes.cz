@@ -86,6 +86,7 @@ The top players of the series play a special finals held at the Pulled Fang tour
  <a href="https://www.vekn.net/forum">discussion forum.</a>
  </p>
 <p><a href="https://vdb.im/">VDB</a>: deckbuilding tool and card database</p>
+<p><a href="https://vtes.global/">VTES Global</a>: directory with many additional resources</p>
 <p><a href="https://discord.gg/vampire-the-eternal-struggle-official-887471681277399091">VtES Discord server</a>: official V:EKN Discord server</p>
 <p><a href="https://www.blackchantry.com/">Black Chantry</a>: current VtES publisher</p>
 

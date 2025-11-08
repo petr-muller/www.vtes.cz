@@ -80,6 +80,7 @@ Města s aktivní komunitou mají svého místního koordinátora, tzv. prince. 
  <a href="https://www.vekn.net/forum">fórum.</a>
  </p>
 <p><a href="https://vdb.im/">VDB</a>: nástroj pro vyhledávání karet a stavbu, správu a prohlížení balíčků</p>
+<p><a href="https://vtes.global/">VTES Global</a>: rozcestník na mnoho dalších zdrojů</p>
 <p><a href="https://discord.gg/vampire-the-eternal-struggle-official-887471681277399091">VtES Discord Server</a>: oficiální Discord server</p>
 <p><a href="https://www.blackchantry.com/">Black Chantry</a>: aktuální vydavatel VtES</p>
 
