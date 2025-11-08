@@ -62,12 +62,12 @@ Města s aktivní komunitou mají svého místního koordinátora, tzv. prince. 
 <p>Během roku princové jednotlivých měst organizují jednotlivé turnaje série <strong>"Road to Pulled Fang"</strong>, které dohromady tvoří mini-ligu. Hráči na horních místech hrají na turnaji Pulled Fang speciální finále celé série:</p>
 
 <ul>
-<li><s><strong>Jihlava</strong>: 29. listopad 2025</s> (<a href="https://www.vekn.net/event-calendar/event/12654">info</a>)</li>
-<li><s><strong>Praha</strong>: 11. leden 2025</s> (<a href="https://www.vekn.net/event-calendar/event/11952">výsledky</a>)</li>
-<li><s><strong>Lichnov</strong>: 15. březen 2025</s> (<a href="https://www.vekn.net/event-calendar/event/12073">výsledky</a>)</li>
-<li><s><strong>Hradec Králové</strong>: 26. duben 2025</s> (<a href="https://www.vekn.net/event-calendar/event/12229">výsledky</a>)</li>
-<li><s><strong>Olomouc</strong>: 31. květen 2025</s> (<a href="https://www.vekn.net/event-calendar/event/12358">výsledky</a>)</li>
-<li><s><strong>Brno</strong>: 21. červen 2025</s> (<a href="https://www.vekn.net/event-calendar/event/12357">výsledky</a>)</li>
+<li><strong>Jihlava</strong>: 29. listopad 2025 (<a href="https://www.vekn.net/event-calendar/event/12654">info</a>)</li>
+<li><strong>Praha</strong>: 17. leden 2026<!-- (<a href="https://www.vekn.net/event-calendar/event/11952">výsledky</a>)--></li>
+<li><strong>Lichnov</strong>: 14. únor 2026<!-- (<a href="https://www.vekn.net/event-calendar/event/12073">výsledky</a>)--></li>
+<li><strong>Hradec Králové</strong>: 18. duben 2026<!-- (<a href="https://www.vekn.net/event-calendar/event/12229">výsledky</a>)--></li>
+<li><strong>Olomouc</strong>: 16. květen 2026<!-- (<a href="https://www.vekn.net/event-calendar/event/12358">výsledky</a>)--></li>
+<li><strong>Brno</strong>: 13. červen 2026<!-- (<a href="https://www.vekn.net/event-calendar/event/12357">výsledky</a>)--></li>
 </ul>
 
 {{< /timelineItem >}}
