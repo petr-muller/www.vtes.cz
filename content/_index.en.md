@@ -62,19 +62,19 @@ To get familiar with the basic rules, watch the following 10-minute video tutori
 <p>Czech national championship, called <strong>"Pulled Fang"</strong>, is traditionally held between August and September.</p>
 
 <ul>
-<li><strong>Pulled Fang #14</strong>: September 5-7th 2025, Sázava, Nový Rychnov&nbsp;(<a href="https://www.vekn.net/event-calendar/event/12421">VEKN</a>|<a href="https://www.facebook.com/events/700278652870661">FB</a>)</li>
+<li><strong>Pulled Fang #15</strong>: September 4-6th 2026, Sázava, Nový Rychnov<!-- (<a href="https://www.vekn.net/event-calendar/event/12421">VEKN</a>|<a href="https://www.facebook.com/events/700278652870661">FB</a>)--></li>
 </ul>
 
 <p>Local princes organize individual tournaments of the <strong>"Road to Pulled Fang"</strong> throughout the year.
 The top players of the series play a special finals held at the Pulled Fang tournament:</p>
 
 <ul>
-<li><s><strong>Jihlava</strong>: October 26th 2024</s> (<a href="https://www.vekn.net/event-calendar/event/11763">results</a>)</li>
-<li><s><strong>Prague</strong>: January 11th 2025</s> (<a href="https://www.vekn.net/event-calendar/event/11952">results</a>)</li>
-<li><s><strong>Lichnov</strong>: March 15th 2025</s> (<a href="https://www.vekn.net/event-calendar/event/12073">results</a>)</li>
-<li><s><strong>Hradec Králové</strong>: April 26th 2025</s> (<a href="https://www.vekn.net/event-calendar/event/12229">results</a>)</li>
-<li><s><strong>Olomouc</strong>: May 31st 2025</s> (<a href="https://www.vekn.net/event-calendar/event/12358">results</a>)</li>
-<li><s><strong>Brno</strong>: June 21st 2025</s> (<a href="https://www.vekn.net/event-calendar/event/12357">results</a>)</li>
+<li><strong>Jihlava</strong>: November 29th 2025 (<a href="https://www.vekn.net/event-calendar/event/12654">info</a>)</li>
+<li><strong>Prague</strong>: January 17th 2026<!-- (<a href="https://www.vekn.net/event-calendar/event/11952">results</a>)--></li>
+<li><strong>Lichnov</strong>: February 14th 2026<!-- (<a href="https://www.vekn.net/event-calendar/event/12073">results</a>)--></li>
+<li><strong>Hradec Králové</strong>: April 18th 2026<!-- (<a href="https://www.vekn.net/event-calendar/event/12229">results</a>)--></li>
+<li><strong>Olomouc</strong>: May 16th 2026<!-- (<a href="https://www.vekn.net/event-calendar/event/12358">results</a>)--></li>
+<li><strong>Brno</strong>: June 13th 2026<!-- (<a href="https://www.vekn.net/event-calendar/event/12357">results</a>)--></li>
 </ul>
 
 {{< /timelineItem >}}
@@ -86,6 +86,7 @@ The top players of the series play a special finals held at the Pulled Fang tour
  <a href="https://www.vekn.net/forum">discussion forum.</a>
  </p>
 <p><a href="https://vdb.im/">VDB</a>: deckbuilding tool and card database</p>
+<p><a href="https://vtes.global/">VTES Global</a>: directory with many additional resources</p>
 <p><a href="https://discord.gg/vampire-the-eternal-struggle-official-887471681277399091">VtES Discord server</a>: official V:EKN Discord server</p>
 <p><a href="https://www.blackchantry.com/">Black Chantry</a>: current VtES publisher</p>
 
