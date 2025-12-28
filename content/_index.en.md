@@ -69,8 +69,8 @@ To get familiar with the basic rules, watch the following 10-minute video tutori
 The top players of the series play a special finals held at the Pulled Fang tournament:</p>
 
 <ul>
-<li><strong>Jihlava</strong>: November 29th 2025 (<a href="https://www.vekn.net/event-calendar/event/12654">info</a>)</li>
-<li><strong>Prague</strong>: January 24th 2026<!-- (<a href="https://www.vekn.net/event-calendar/event/11952">results</a>)--></li>
+<li><s><strong>Jihlava</strong>: November 29th 2025</s> (<a href="https://www.vekn.net/event-calendar/event/12654">results</a>)</li>
+<li><strong>Prague</strong>: January 24th 2026 (<a href="https://www.vekn.net/event-calendar/event/12884">info</a>)</li>
 <li><strong>Lichnov</strong>: February 14th 2026<!-- (<a href="https://www.vekn.net/event-calendar/event/12073">results</a>)--></li>
 <li><strong>Hradec Králové</strong>: April 18th 2026<!-- (<a href="https://www.vekn.net/event-calendar/event/12229">results</a>)--></li>
 <li><strong>Olomouc</strong>: May 16th 2026<!-- (<a href="https://www.vekn.net/event-calendar/event/12358">results</a>)--></li>
