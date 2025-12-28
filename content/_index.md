@@ -62,8 +62,8 @@ Města s aktivní komunitou mají svého místního koordinátora, tzv. prince. 
 <p>Během roku princové jednotlivých měst organizují jednotlivé turnaje série <strong>"Road to Pulled Fang"</strong>, které dohromady tvoří mini-ligu. Hráči na horních místech hrají na turnaji Pulled Fang speciální finále celé série:</p>
 
 <ul>
-<li><strong>Jihlava</strong>: 29. listopad 2025 (<a href="https://www.vekn.net/event-calendar/event/12654">info</a>)</li>
-<li><strong>Praha</strong>: 24. leden 2026<!-- (<a href="https://www.vekn.net/event-calendar/event/11952">výsledky</a>)--></li>
+<li><s><strong>Jihlava</strong>: 29. listopad 2025</s> (<a href="https://www.vekn.net/event-calendar/event/12654">výsledky</a>)</li>
+<li><strong>Praha</strong>: 24. leden 2026 (<a href="https://www.vekn.net/event-calendar/event/12884">info</a>)</li>
 <li><strong>Lichnov</strong>: 14. únor 2026<!-- (<a href="https://www.vekn.net/event-calendar/event/12073">výsledky</a>)--></li>
 <li><strong>Hradec Králové</strong>: 18. duben 2026<!-- (<a href="https://www.vekn.net/event-calendar/event/12229">výsledky</a>)--></li>
 <li><strong>Olomouc</strong>: 16. květen 2026<!-- (<a href="https://www.vekn.net/event-calendar/event/12358">výsledky</a>)--></li>
