@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RTPF Decklists Analysis: 15/3</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
+:root {
+  --bg-primary: #0d0d14;
+  --bg-secondary: #14141f;
+  --bg-card: #1a1a28;
+  --border: #2a2a40;
+  --text-primary: #e8e4d9;
+  --text-secondary: #9990a8;
+  --gold: #c9a227;
+  --gold-dim: #5a4610;
+  --blood: #8b1a1a;
+  --blood-light: #c0392b;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'Georgia', serif;
+  line-height: 1.5;
+}
+.container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+.header {
+  border: 1px solid var(--gold-dim);
+  padding: 1.5rem 2rem;
+  margin-bottom: 2rem;
+  background: var(--bg-secondary);
+}
+.header h1 { color: var(--gold); font-size: 1.8rem; letter-spacing: 0.05em; }
+.header .kpi { color: var(--text-secondary); margin-top: 0.5rem; font-size: 1.1rem; }
+.section { margin-bottom: 2.5rem; }
+.section-title {
+  color: var(--gold);
+  border-bottom: 1px solid var(--gold-dim);
+  padding-bottom: 0.4rem;
+  margin-bottom: 1.2rem;
+  font-size: 1rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.charts-row { display: flex; gap: 1.5rem; margin-bottom: 2rem; flex-wrap: wrap; }
+.chart-box {
+  flex: 1;
+  min-width: 280px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+}
+.chart-box h3 {
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-weight: normal;
+}
+.chart-canvas-wrap { flex: 1; position: relative; min-height: 260px; }
+.histogram-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  padding: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+.histogram-box h3 {
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-weight: normal;
+}
+.histogram-canvas-wrap { position: relative; height: 200px; }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+}
+thead tr { background: var(--bg-secondary); }
+thead th {
+  padding: 0.6rem 1rem;
+  text-align: left;
+  color: var(--text-secondary);
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--border);
+  font-weight: normal;
+}
+tbody tr:nth-child(even) { background: rgba(255,255,255,0.025); }
+tbody tr:hover { background: rgba(201,162,39,0.06); }
+tbody td {
+  padding: 0.55rem 1rem;
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+.num { font-variant-numeric: tabular-nums; text-align: right; }
+.rank { color: var(--text-secondary); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="header">
+  <h1>RTPF Decklists Analysis: 15/3</h1>
+  <div class="kpi">Total decklists: <strong>10</strong></div>
+</div>
+
+<div class="charts-row">
+  <div class="chart-box">
+    <h3>Clan Distribution</h3>
+    <div class="chart-canvas-wrap"><canvas id="clanChart"></canvas></div>
+  </div>
+  <div class="chart-box">
+    <h3>Sect Distribution</h3>
+    <div class="chart-canvas-wrap"><canvas id="sectChart"></canvas></div>
+  </div>
+  <div class="chart-box">
+    <h3>Capacity Distribution</h3>
+    <div class="chart-canvas-wrap"><canvas id="capsChart"></canvas></div>
+  </div>
+</div>
+
+<div class="histogram-box">
+  <h3>Crypt Capacity Histogram</h3>
+  <div class="histogram-canvas-wrap"><canvas id="capsHistChart"></canvas></div>
+</div>
+
+<div class="histogram-box">
+  <h3>Crypt Group Histogram</h3>
+  <div class="histogram-canvas-wrap"><canvas id="groupHistChart"></canvas></div>
+</div>
+
+
+<div class="section">
+  <div class="section-title">Standings by Clan</div>
+  <svg width="650" height="272" xmlns="http://www.w3.org/2000/svg" style="display:block;max-width:100%"><text x="132" y="20" text-anchor="end" dominant-baseline="middle" fill="#9990a8" font-size="12" font-family="Georgia,serif">Malkavian</text><line x1="140" y1="20" x2="640" y2="20" stroke="#333355" stroke-width="1"/><line x1="640" y1="17" x2="640" y2="23" stroke="#444466" stroke-width="1"/><text x="640" y="27" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">1</text><line x1="607" y1="17" x2="607" y2="23" stroke="#444466" stroke-width="1"/><text x="607" y="27" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">2</text><line x1="573" y1="17" x2="573" y2="23" stroke="#444466" stroke-width="1"/><line x1="540" y1="17" x2="540" y2="23" stroke="#444466" stroke-width="1"/><text x="540" y="27" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">4</text><line x1="507" y1="17" x2="507" y2="23" stroke="#444466" stroke-width="1"/><line x1="473" y1="17" x2="473" y2="23" stroke="#444466" stroke-width="1"/><text x="473" y="27" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">6</text><line x1="440" y1="17" x2="440" y2="23" stroke="#444466" stroke-width="1"/><line x1="407" y1="17" x2="407" y2="23" stroke="#444466" stroke-width="1"/><text x="407" y="27" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">8</text><line x1="373" y1="17" x2="373" y2="23" stroke="#444466" stroke-width="1"/><line x1="340" y1="17" x2="340" y2="23" stroke="#444466" stroke-width="1"/><text x="340" y="27" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">10</text><line x1="307" y1="17" x2="307" y2="23" stroke="#444466" stroke-width="1"/><line x1="273" y1="17" x2="273" y2="23" stroke="#444466" stroke-width="1"/><text x="273" y="27" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">12</text><line x1="240" y1="17" x2="240" y2="23" stroke="#444466" stroke-width="1"/><line x1="207" y1="17" x2="207" y2="23" stroke="#444466" stroke-width="1"/><text x="207" y="27" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">14</text><line x1="173" y1="17" x2="173" y2="23" stroke="#444466" stroke-width="1"/><line x1="140" y1="17" x2="140" y2="23" stroke="#444466" stroke-width="1"/><text x="140" y="27" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">16</text><circle cx="140" cy="20" r="5" fill="#6272a4" opacity="0.9"><title>Position 16</title></circle><circle cx="607" cy="20" r="5" fill="#6272a4" opacity="0.9"><title>Position 2</title></circle><text x="132" y="58" text-anchor="end" dominant-baseline="middle" fill="#9990a8" font-size="12" font-family="Georgia,serif">Ministry</text><line x1="140" y1="58" x2="640" y2="58" stroke="#333355" stroke-width="1"/><line x1="640" y1="55" x2="640" y2="61" stroke="#444466" stroke-width="1"/><text x="640" y="65" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">1</text><line x1="607" y1="55" x2="607" y2="61" stroke="#444466" stroke-width="1"/><text x="607" y="65" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">2</text><line x1="573" y1="55" x2="573" y2="61" stroke="#444466" stroke-width="1"/><line x1="540" y1="55" x2="540" y2="61" stroke="#444466" stroke-width="1"/><text x="540" y="65" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">4</text><line x1="507" y1="55" x2="507" y2="61" stroke="#444466" stroke-width="1"/><line x1="473" y1="55" x2="473" y2="61" stroke="#444466" stroke-width="1"/><text x="473" y="65" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">6</text><line x1="440" y1="55" x2="440" y2="61" stroke="#444466" stroke-width="1"/><line x1="407" y1="55" x2="407" y2="61" stroke="#444466" stroke-width="1"/><text x="407" y="65" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">8</text><line x1="373" y1="55" x2="373" y2="61" stroke="#444466" stroke-width="1"/><line x1="340" y1="55" x2="340" y2="61" stroke="#444466" stroke-width="1"/><text x="340" y="65" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">10</text><line x1="307" y1="55" x2="307" y2="61" stroke="#444466" stroke-width="1"/><line x1="273" y1="55" x2="273" y2="61" stroke="#444466" stroke-width="1"/><text x="273" y="65" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">12</text><line x1="240" y1="55" x2="240" y2="61" stroke="#444466" stroke-width="1"/><line x1="207" y1="55" x2="207" y2="61" stroke="#444466" stroke-width="1"/><text x="207" y="65" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">14</text><line x1="173" y1="55" x2="173" y2="61" stroke="#444466" stroke-width="1"/><line x1="140" y1="55" x2="140" y2="61" stroke="#444466" stroke-width="1"/><text x="140" y="65" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">16</text><circle cx="340" cy="58" r="5" fill="#6272a4" opacity="0.9"><title>Position 10</title></circle><circle cx="640" cy="58" r="5" fill="#6272a4" opacity="0.9"><title>Position 1</title></circle><text x="132" y="96" text-anchor="end" dominant-baseline="middle" fill="#9990a8" font-size="12" font-family="Georgia,serif">Toreador</text><line x1="140" y1="96" x2="640" y2="96" stroke="#333355" stroke-width="1"/><line x1="640" y1="93" x2="640" y2="99" stroke="#444466" stroke-width="1"/><text x="640" y="103" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">1</text><line x1="607" y1="93" x2="607" y2="99" stroke="#444466" stroke-width="1"/><text x="607" y="103" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">2</text><line x1="573" y1="93" x2="573" y2="99" stroke="#444466" stroke-width="1"/><line x1="540" y1="93" x2="540" y2="99" stroke="#444466" stroke-width="1"/><text x="540" y="103" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">4</text><line x1="507" y1="93" x2="507" y2="99" stroke="#444466" stroke-width="1"/><line x1="473" y1="93" x2="473" y2="99" stroke="#444466" stroke-width="1"/><text x="473" y="103" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">6</text><line x1="440" y1="93" x2="440" y2="99" stroke="#444466" stroke-width="1"/><line x1="407" y1="93" x2="407" y2="99" stroke="#444466" stroke-width="1"/><text x="407" y="103" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">8</text><line x1="373" y1="93" x2="373" y2="99" stroke="#444466" stroke-width="1"/><line x1="340" y1="93" x2="340" y2="99" stroke="#444466" stroke-width="1"/><text x="340" y="103" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">10</text><line x1="307" y1="93" x2="307" y2="99" stroke="#444466" stroke-width="1"/><line x1="273" y1="93" x2="273" y2="99" stroke="#444466" stroke-width="1"/><text x="273" y="103" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">12</text><line x1="240" y1="93" x2="240" y2="99" stroke="#444466" stroke-width="1"/><line x1="207" y1="93" x2="207" y2="99" stroke="#444466" stroke-width="1"/><text x="207" y="103" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">14</text><line x1="173" y1="93" x2="173" y2="99" stroke="#444466" stroke-width="1"/><line x1="140" y1="93" x2="140" y2="99" stroke="#444466" stroke-width="1"/><text x="140" y="103" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">16</text><circle cx="207" cy="96" r="5" fill="#6272a4" opacity="0.9"><title>Position 14</title></circle><circle cx="273" cy="96" r="5" fill="#6272a4" opacity="0.9"><title>Position 12</title></circle><text x="132" y="134" text-anchor="end" dominant-baseline="middle" fill="#9990a8" font-size="12" font-family="Georgia,serif">Banu Haqim</text><line x1="140" y1="134" x2="640" y2="134" stroke="#333355" stroke-width="1"/><line x1="640" y1="131" x2="640" y2="137" stroke="#444466" stroke-width="1"/><text x="640" y="141" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">1</text><line x1="607" y1="131" x2="607" y2="137" stroke="#444466" stroke-width="1"/><text x="607" y="141" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">2</text><line x1="573" y1="131" x2="573" y2="137" stroke="#444466" stroke-width="1"/><line x1="540" y1="131" x2="540" y2="137" stroke="#444466" stroke-width="1"/><text x="540" y="141" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">4</text><line x1="507" y1="131" x2="507" y2="137" stroke="#444466" stroke-width="1"/><line x1="473" y1="131" x2="473" y2="137" stroke="#444466" stroke-width="1"/><text x="473" y="141" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">6</text><line x1="440" y1="131" x2="440" y2="137" stroke="#444466" stroke-width="1"/><line x1="407" y1="131" x2="407" y2="137" stroke="#444466" stroke-width="1"/><text x="407" y="141" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">8</text><line x1="373" y1="131" x2="373" y2="137" stroke="#444466" stroke-width="1"/><line x1="340" y1="131" x2="340" y2="137" stroke="#444466" stroke-width="1"/><text x="340" y="141" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">10</text><line x1="307" y1="131" x2="307" y2="137" stroke="#444466" stroke-width="1"/><line x1="273" y1="131" x2="273" y2="137" stroke="#444466" stroke-width="1"/><text x="273" y="141" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">12</text><line x1="240" y1="131" x2="240" y2="137" stroke="#444466" stroke-width="1"/><line x1="207" y1="131" x2="207" y2="137" stroke="#444466" stroke-width="1"/><text x="207" y="141" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">14</text><line x1="173" y1="131" x2="173" y2="137" stroke="#444466" stroke-width="1"/><line x1="140" y1="131" x2="140" y2="137" stroke="#444466" stroke-width="1"/><text x="140" y="141" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">16</text><circle cx="607" cy="134" r="5" fill="#6272a4" opacity="0.9"><title>Position 2</title></circle><text x="132" y="172" text-anchor="end" dominant-baseline="middle" fill="#9990a8" font-size="12" font-family="Georgia,serif">Gangrel</text><line x1="140" y1="172" x2="640" y2="172" stroke="#333355" stroke-width="1"/><line x1="640" y1="169" x2="640" y2="175" stroke="#444466" stroke-width="1"/><text x="640" y="179" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">1</text><line x1="607" y1="169" x2="607" y2="175" stroke="#444466" stroke-width="1"/><text x="607" y="179" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">2</text><line x1="573" y1="169" x2="573" y2="175" stroke="#444466" stroke-width="1"/><line x1="540" y1="169" x2="540" y2="175" stroke="#444466" stroke-width="1"/><text x="540" y="179" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">4</text><line x1="507" y1="169" x2="507" y2="175" stroke="#444466" stroke-width="1"/><line x1="473" y1="169" x2="473" y2="175" stroke="#444466" stroke-width="1"/><text x="473" y="179" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">6</text><line x1="440" y1="169" x2="440" y2="175" stroke="#444466" stroke-width="1"/><line x1="407" y1="169" x2="407" y2="175" stroke="#444466" stroke-width="1"/><text x="407" y="179" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">8</text><line x1="373" y1="169" x2="373" y2="175" stroke="#444466" stroke-width="1"/><line x1="340" y1="169" x2="340" y2="175" stroke="#444466" stroke-width="1"/><text x="340" y="179" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">10</text><line x1="307" y1="169" x2="307" y2="175" stroke="#444466" stroke-width="1"/><line x1="273" y1="169" x2="273" y2="175" stroke="#444466" stroke-width="1"/><text x="273" y="179" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">12</text><line x1="240" y1="169" x2="240" y2="175" stroke="#444466" stroke-width="1"/><line x1="207" y1="169" x2="207" y2="175" stroke="#444466" stroke-width="1"/><text x="207" y="179" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">14</text><line x1="173" y1="169" x2="173" y2="175" stroke="#444466" stroke-width="1"/><line x1="140" y1="169" x2="140" y2="175" stroke="#444466" stroke-width="1"/><text x="140" y="179" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">16</text><circle cx="607" cy="172" r="5" fill="#6272a4" opacity="0.9"><title>Position 2</title></circle><text x="132" y="210" text-anchor="end" dominant-baseline="middle" fill="#9990a8" font-size="12" font-family="Georgia,serif">Nosferatu antitribu</text><line x1="140" y1="210" x2="640" y2="210" stroke="#333355" stroke-width="1"/><line x1="640" y1="207" x2="640" y2="213" stroke="#444466" stroke-width="1"/><text x="640" y="217" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">1</text><line x1="607" y1="207" x2="607" y2="213" stroke="#444466" stroke-width="1"/><text x="607" y="217" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">2</text><line x1="573" y1="207" x2="573" y2="213" stroke="#444466" stroke-width="1"/><line x1="540" y1="207" x2="540" y2="213" stroke="#444466" stroke-width="1"/><text x="540" y="217" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">4</text><line x1="507" y1="207" x2="507" y2="213" stroke="#444466" stroke-width="1"/><line x1="473" y1="207" x2="473" y2="213" stroke="#444466" stroke-width="1"/><text x="473" y="217" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">6</text><line x1="440" y1="207" x2="440" y2="213" stroke="#444466" stroke-width="1"/><line x1="407" y1="207" x2="407" y2="213" stroke="#444466" stroke-width="1"/><text x="407" y="217" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">8</text><line x1="373" y1="207" x2="373" y2="213" stroke="#444466" stroke-width="1"/><line x1="340" y1="207" x2="340" y2="213" stroke="#444466" stroke-width="1"/><text x="340" y="217" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">10</text><line x1="307" y1="207" x2="307" y2="213" stroke="#444466" stroke-width="1"/><line x1="273" y1="207" x2="273" y2="213" stroke="#444466" stroke-width="1"/><text x="273" y="217" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">12</text><line x1="240" y1="207" x2="240" y2="213" stroke="#444466" stroke-width="1"/><line x1="207" y1="207" x2="207" y2="213" stroke="#444466" stroke-width="1"/><text x="207" y="217" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">14</text><line x1="173" y1="207" x2="173" y2="213" stroke="#444466" stroke-width="1"/><line x1="140" y1="207" x2="140" y2="213" stroke="#444466" stroke-width="1"/><text x="140" y="217" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">16</text><circle cx="307" cy="210" r="5" fill="#6272a4" opacity="0.9"><title>Position 11</title></circle><text x="132" y="248" text-anchor="end" dominant-baseline="middle" fill="#9990a8" font-size="12" font-family="Georgia,serif">Tremere</text><line x1="140" y1="248" x2="640" y2="248" stroke="#333355" stroke-width="1"/><line x1="640" y1="245" x2="640" y2="251" stroke="#444466" stroke-width="1"/><text x="640" y="255" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">1</text><line x1="607" y1="245" x2="607" y2="251" stroke="#444466" stroke-width="1"/><text x="607" y="255" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">2</text><line x1="573" y1="245" x2="573" y2="251" stroke="#444466" stroke-width="1"/><line x1="540" y1="245" x2="540" y2="251" stroke="#444466" stroke-width="1"/><text x="540" y="255" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">4</text><line x1="507" y1="245" x2="507" y2="251" stroke="#444466" stroke-width="1"/><line x1="473" y1="245" x2="473" y2="251" stroke="#444466" stroke-width="1"/><text x="473" y="255" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">6</text><line x1="440" y1="245" x2="440" y2="251" stroke="#444466" stroke-width="1"/><line x1="407" y1="245" x2="407" y2="251" stroke="#444466" stroke-width="1"/><text x="407" y="255" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">8</text><line x1="373" y1="245" x2="373" y2="251" stroke="#444466" stroke-width="1"/><line x1="340" y1="245" x2="340" y2="251" stroke="#444466" stroke-width="1"/><text x="340" y="255" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">10</text><line x1="307" y1="245" x2="307" y2="251" stroke="#444466" stroke-width="1"/><line x1="273" y1="245" x2="273" y2="251" stroke="#444466" stroke-width="1"/><text x="273" y="255" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">12</text><line x1="240" y1="245" x2="240" y2="251" stroke="#444466" stroke-width="1"/><line x1="207" y1="245" x2="207" y2="251" stroke="#444466" stroke-width="1"/><text x="207" y="255" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">14</text><line x1="173" y1="245" x2="173" y2="251" stroke="#444466" stroke-width="1"/><line x1="140" y1="245" x2="140" y2="251" stroke="#444466" stroke-width="1"/><text x="140" y="255" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">16</text><circle cx="373" cy="248" r="5" fill="#6272a4" opacity="0.9"><title>Position 9</title></circle></svg>
+</div>
+<div class="section">
+  <div class="section-title">Standings by Capacity</div>
+  <svg width="650" height="158" xmlns="http://www.w3.org/2000/svg" style="display:block;max-width:100%"><text x="132" y="20" text-anchor="end" dominant-baseline="middle" fill="#9990a8" font-size="12" font-family="Georgia,serif">Midcaps</text><line x1="140" y1="20" x2="640" y2="20" stroke="#333355" stroke-width="1"/><line x1="640" y1="17" x2="640" y2="23" stroke="#444466" stroke-width="1"/><text x="640" y="27" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">1</text><line x1="607" y1="17" x2="607" y2="23" stroke="#444466" stroke-width="1"/><text x="607" y="27" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">2</text><line x1="573" y1="17" x2="573" y2="23" stroke="#444466" stroke-width="1"/><line x1="540" y1="17" x2="540" y2="23" stroke="#444466" stroke-width="1"/><text x="540" y="27" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">4</text><line x1="507" y1="17" x2="507" y2="23" stroke="#444466" stroke-width="1"/><line x1="473" y1="17" x2="473" y2="23" stroke="#444466" stroke-width="1"/><text x="473" y="27" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">6</text><line x1="440" y1="17" x2="440" y2="23" stroke="#444466" stroke-width="1"/><line x1="407" y1="17" x2="407" y2="23" stroke="#444466" stroke-width="1"/><text x="407" y="27" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">8</text><line x1="373" y1="17" x2="373" y2="23" stroke="#444466" stroke-width="1"/><line x1="340" y1="17" x2="340" y2="23" stroke="#444466" stroke-width="1"/><text x="340" y="27" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">10</text><line x1="307" y1="17" x2="307" y2="23" stroke="#444466" stroke-width="1"/><line x1="273" y1="17" x2="273" y2="23" stroke="#444466" stroke-width="1"/><text x="273" y="27" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">12</text><line x1="240" y1="17" x2="240" y2="23" stroke="#444466" stroke-width="1"/><line x1="207" y1="17" x2="207" y2="23" stroke="#444466" stroke-width="1"/><text x="207" y="27" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">14</text><line x1="173" y1="17" x2="173" y2="23" stroke="#444466" stroke-width="1"/><line x1="140" y1="17" x2="140" y2="23" stroke="#444466" stroke-width="1"/><text x="140" y="27" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">16</text><circle cx="373" cy="20" r="5" fill="#6272a4" opacity="0.9"><title>Position 9</title></circle><circle cx="340" cy="20" r="5" fill="#6272a4" opacity="0.9"><title>Position 10</title></circle><circle cx="140" cy="20" r="5" fill="#6272a4" opacity="0.9"><title>Position 16</title></circle><circle cx="640" cy="20" r="5" fill="#6272a4" opacity="0.9"><title>Position 1</title></circle><circle cx="607" cy="20" r="5" fill="#6272a4" opacity="0.9"><title>Position 2</title></circle><text x="132" y="58" text-anchor="end" dominant-baseline="middle" fill="#9990a8" font-size="12" font-family="Georgia,serif">Bigcaps</text><line x1="140" y1="58" x2="640" y2="58" stroke="#333355" stroke-width="1"/><line x1="640" y1="55" x2="640" y2="61" stroke="#444466" stroke-width="1"/><text x="640" y="65" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">1</text><line x1="607" y1="55" x2="607" y2="61" stroke="#444466" stroke-width="1"/><text x="607" y="65" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">2</text><line x1="573" y1="55" x2="573" y2="61" stroke="#444466" stroke-width="1"/><line x1="540" y1="55" x2="540" y2="61" stroke="#444466" stroke-width="1"/><text x="540" y="65" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">4</text><line x1="507" y1="55" x2="507" y2="61" stroke="#444466" stroke-width="1"/><line x1="473" y1="55" x2="473" y2="61" stroke="#444466" stroke-width="1"/><text x="473" y="65" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">6</text><line x1="440" y1="55" x2="440" y2="61" stroke="#444466" stroke-width="1"/><line x1="407" y1="55" x2="407" y2="61" stroke="#444466" stroke-width="1"/><text x="407" y="65" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">8</text><line x1="373" y1="55" x2="373" y2="61" stroke="#444466" stroke-width="1"/><line x1="340" y1="55" x2="340" y2="61" stroke="#444466" stroke-width="1"/><text x="340" y="65" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">10</text><line x1="307" y1="55" x2="307" y2="61" stroke="#444466" stroke-width="1"/><line x1="273" y1="55" x2="273" y2="61" stroke="#444466" stroke-width="1"/><text x="273" y="65" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">12</text><line x1="240" y1="55" x2="240" y2="61" stroke="#444466" stroke-width="1"/><line x1="207" y1="55" x2="207" y2="61" stroke="#444466" stroke-width="1"/><text x="207" y="65" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">14</text><line x1="173" y1="55" x2="173" y2="61" stroke="#444466" stroke-width="1"/><line x1="140" y1="55" x2="140" y2="61" stroke="#444466" stroke-width="1"/><text x="140" y="65" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">16</text><circle cx="207" cy="58" r="5" fill="#6272a4" opacity="0.9"><title>Position 14</title></circle><circle cx="273" cy="58" r="5" fill="#6272a4" opacity="0.9"><title>Position 12</title></circle><text x="132" y="96" text-anchor="end" dominant-baseline="middle" fill="#9990a8" font-size="12" font-family="Georgia,serif">Weenies</text><line x1="140" y1="96" x2="640" y2="96" stroke="#333355" stroke-width="1"/><line x1="640" y1="93" x2="640" y2="99" stroke="#444466" stroke-width="1"/><text x="640" y="103" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">1</text><line x1="607" y1="93" x2="607" y2="99" stroke="#444466" stroke-width="1"/><text x="607" y="103" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">2</text><line x1="573" y1="93" x2="573" y2="99" stroke="#444466" stroke-width="1"/><line x1="540" y1="93" x2="540" y2="99" stroke="#444466" stroke-width="1"/><text x="540" y="103" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">4</text><line x1="507" y1="93" x2="507" y2="99" stroke="#444466" stroke-width="1"/><line x1="473" y1="93" x2="473" y2="99" stroke="#444466" stroke-width="1"/><text x="473" y="103" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">6</text><line x1="440" y1="93" x2="440" y2="99" stroke="#444466" stroke-width="1"/><line x1="407" y1="93" x2="407" y2="99" stroke="#444466" stroke-width="1"/><text x="407" y="103" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">8</text><line x1="373" y1="93" x2="373" y2="99" stroke="#444466" stroke-width="1"/><line x1="340" y1="93" x2="340" y2="99" stroke="#444466" stroke-width="1"/><text x="340" y="103" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">10</text><line x1="307" y1="93" x2="307" y2="99" stroke="#444466" stroke-width="1"/><line x1="273" y1="93" x2="273" y2="99" stroke="#444466" stroke-width="1"/><text x="273" y="103" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">12</text><line x1="240" y1="93" x2="240" y2="99" stroke="#444466" stroke-width="1"/><line x1="207" y1="93" x2="207" y2="99" stroke="#444466" stroke-width="1"/><text x="207" y="103" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">14</text><line x1="173" y1="93" x2="173" y2="99" stroke="#444466" stroke-width="1"/><line x1="140" y1="93" x2="140" y2="99" stroke="#444466" stroke-width="1"/><text x="140" y="103" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">16</text><circle cx="607" cy="96" r="5" fill="#6272a4" opacity="0.9"><title>Position 2</title></circle><circle cx="307" cy="96" r="5" fill="#6272a4" opacity="0.9"><title>Position 11</title></circle><text x="132" y="134" text-anchor="end" dominant-baseline="middle" fill="#9990a8" font-size="12" font-family="Georgia,serif">Mixed</text><line x1="140" y1="134" x2="640" y2="134" stroke="#333355" stroke-width="1"/><line x1="640" y1="131" x2="640" y2="137" stroke="#444466" stroke-width="1"/><text x="640" y="141" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">1</text><line x1="607" y1="131" x2="607" y2="137" stroke="#444466" stroke-width="1"/><text x="607" y="141" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">2</text><line x1="573" y1="131" x2="573" y2="137" stroke="#444466" stroke-width="1"/><line x1="540" y1="131" x2="540" y2="137" stroke="#444466" stroke-width="1"/><text x="540" y="141" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">4</text><line x1="507" y1="131" x2="507" y2="137" stroke="#444466" stroke-width="1"/><line x1="473" y1="131" x2="473" y2="137" stroke="#444466" stroke-width="1"/><text x="473" y="141" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">6</text><line x1="440" y1="131" x2="440" y2="137" stroke="#444466" stroke-width="1"/><line x1="407" y1="131" x2="407" y2="137" stroke="#444466" stroke-width="1"/><text x="407" y="141" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">8</text><line x1="373" y1="131" x2="373" y2="137" stroke="#444466" stroke-width="1"/><line x1="340" y1="131" x2="340" y2="137" stroke="#444466" stroke-width="1"/><text x="340" y="141" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">10</text><line x1="307" y1="131" x2="307" y2="137" stroke="#444466" stroke-width="1"/><line x1="273" y1="131" x2="273" y2="137" stroke="#444466" stroke-width="1"/><text x="273" y="141" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">12</text><line x1="240" y1="131" x2="240" y2="137" stroke="#444466" stroke-width="1"/><line x1="207" y1="131" x2="207" y2="137" stroke="#444466" stroke-width="1"/><text x="207" y="141" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">14</text><line x1="173" y1="131" x2="173" y2="137" stroke="#444466" stroke-width="1"/><line x1="140" y1="131" x2="140" y2="137" stroke="#444466" stroke-width="1"/><text x="140" y="141" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">16</text><circle cx="607" cy="134" r="5" fill="#6272a4" opacity="0.9"><title>Position 2</title></circle></svg>
+</div>
+<div class="section">
+  <div class="section-title">Standings by Sect</div>
+  <svg width="650" height="158" xmlns="http://www.w3.org/2000/svg" style="display:block;max-width:100%"><text x="132" y="20" text-anchor="end" dominant-baseline="middle" fill="#9990a8" font-size="12" font-family="Georgia,serif">Camarilla</text><line x1="140" y1="20" x2="640" y2="20" stroke="#333355" stroke-width="1"/><line x1="640" y1="17" x2="640" y2="23" stroke="#444466" stroke-width="1"/><text x="640" y="27" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">1</text><line x1="607" y1="17" x2="607" y2="23" stroke="#444466" stroke-width="1"/><text x="607" y="27" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">2</text><line x1="573" y1="17" x2="573" y2="23" stroke="#444466" stroke-width="1"/><line x1="540" y1="17" x2="540" y2="23" stroke="#444466" stroke-width="1"/><text x="540" y="27" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">4</text><line x1="507" y1="17" x2="507" y2="23" stroke="#444466" stroke-width="1"/><line x1="473" y1="17" x2="473" y2="23" stroke="#444466" stroke-width="1"/><text x="473" y="27" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">6</text><line x1="440" y1="17" x2="440" y2="23" stroke="#444466" stroke-width="1"/><line x1="407" y1="17" x2="407" y2="23" stroke="#444466" stroke-width="1"/><text x="407" y="27" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">8</text><line x1="373" y1="17" x2="373" y2="23" stroke="#444466" stroke-width="1"/><line x1="340" y1="17" x2="340" y2="23" stroke="#444466" stroke-width="1"/><text x="340" y="27" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">10</text><line x1="307" y1="17" x2="307" y2="23" stroke="#444466" stroke-width="1"/><line x1="273" y1="17" x2="273" y2="23" stroke="#444466" stroke-width="1"/><text x="273" y="27" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">12</text><line x1="240" y1="17" x2="240" y2="23" stroke="#444466" stroke-width="1"/><line x1="207" y1="17" x2="207" y2="23" stroke="#444466" stroke-width="1"/><text x="207" y="27" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">14</text><line x1="173" y1="17" x2="173" y2="23" stroke="#444466" stroke-width="1"/><line x1="140" y1="17" x2="140" y2="23" stroke="#444466" stroke-width="1"/><text x="140" y="27" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">16</text><circle cx="140" cy="20" r="5" fill="#6272a4" opacity="0.9"><title>Position 16</title></circle><circle cx="607" cy="20" r="5" fill="#6272a4" opacity="0.9"><title>Position 2</title></circle><circle cx="207" cy="20" r="5" fill="#6272a4" opacity="0.9"><title>Position 14</title></circle><circle cx="273" cy="20" r="5" fill="#6272a4" opacity="0.9"><title>Position 12</title></circle><text x="132" y="58" text-anchor="end" dominant-baseline="middle" fill="#9990a8" font-size="12" font-family="Georgia,serif">Anarch</text><line x1="140" y1="58" x2="640" y2="58" stroke="#333355" stroke-width="1"/><line x1="640" y1="55" x2="640" y2="61" stroke="#444466" stroke-width="1"/><text x="640" y="65" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">1</text><line x1="607" y1="55" x2="607" y2="61" stroke="#444466" stroke-width="1"/><text x="607" y="65" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">2</text><line x1="573" y1="55" x2="573" y2="61" stroke="#444466" stroke-width="1"/><line x1="540" y1="55" x2="540" y2="61" stroke="#444466" stroke-width="1"/><text x="540" y="65" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">4</text><line x1="507" y1="55" x2="507" y2="61" stroke="#444466" stroke-width="1"/><line x1="473" y1="55" x2="473" y2="61" stroke="#444466" stroke-width="1"/><text x="473" y="65" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">6</text><line x1="440" y1="55" x2="440" y2="61" stroke="#444466" stroke-width="1"/><line x1="407" y1="55" x2="407" y2="61" stroke="#444466" stroke-width="1"/><text x="407" y="65" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">8</text><line x1="373" y1="55" x2="373" y2="61" stroke="#444466" stroke-width="1"/><line x1="340" y1="55" x2="340" y2="61" stroke="#444466" stroke-width="1"/><text x="340" y="65" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">10</text><line x1="307" y1="55" x2="307" y2="61" stroke="#444466" stroke-width="1"/><line x1="273" y1="55" x2="273" y2="61" stroke="#444466" stroke-width="1"/><text x="273" y="65" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">12</text><line x1="240" y1="55" x2="240" y2="61" stroke="#444466" stroke-width="1"/><line x1="207" y1="55" x2="207" y2="61" stroke="#444466" stroke-width="1"/><text x="207" y="65" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">14</text><line x1="173" y1="55" x2="173" y2="61" stroke="#444466" stroke-width="1"/><line x1="140" y1="55" x2="140" y2="61" stroke="#444466" stroke-width="1"/><text x="140" y="65" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">16</text><circle cx="340" cy="58" r="5" fill="#6272a4" opacity="0.9"><title>Position 10</title></circle><circle cx="607" cy="58" r="5" fill="#6272a4" opacity="0.9"><title>Position 2</title></circle><circle cx="640" cy="58" r="5" fill="#6272a4" opacity="0.9"><title>Position 1</title></circle><text x="132" y="96" text-anchor="end" dominant-baseline="middle" fill="#9990a8" font-size="12" font-family="Georgia,serif">Sabbat</text><line x1="140" y1="96" x2="640" y2="96" stroke="#333355" stroke-width="1"/><line x1="640" y1="93" x2="640" y2="99" stroke="#444466" stroke-width="1"/><text x="640" y="103" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">1</text><line x1="607" y1="93" x2="607" y2="99" stroke="#444466" stroke-width="1"/><text x="607" y="103" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">2</text><line x1="573" y1="93" x2="573" y2="99" stroke="#444466" stroke-width="1"/><line x1="540" y1="93" x2="540" y2="99" stroke="#444466" stroke-width="1"/><text x="540" y="103" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">4</text><line x1="507" y1="93" x2="507" y2="99" stroke="#444466" stroke-width="1"/><line x1="473" y1="93" x2="473" y2="99" stroke="#444466" stroke-width="1"/><text x="473" y="103" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">6</text><line x1="440" y1="93" x2="440" y2="99" stroke="#444466" stroke-width="1"/><line x1="407" y1="93" x2="407" y2="99" stroke="#444466" stroke-width="1"/><text x="407" y="103" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">8</text><line x1="373" y1="93" x2="373" y2="99" stroke="#444466" stroke-width="1"/><line x1="340" y1="93" x2="340" y2="99" stroke="#444466" stroke-width="1"/><text x="340" y="103" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">10</text><line x1="307" y1="93" x2="307" y2="99" stroke="#444466" stroke-width="1"/><line x1="273" y1="93" x2="273" y2="99" stroke="#444466" stroke-width="1"/><text x="273" y="103" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">12</text><line x1="240" y1="93" x2="240" y2="99" stroke="#444466" stroke-width="1"/><line x1="207" y1="93" x2="207" y2="99" stroke="#444466" stroke-width="1"/><text x="207" y="103" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">14</text><line x1="173" y1="93" x2="173" y2="99" stroke="#444466" stroke-width="1"/><line x1="140" y1="93" x2="140" y2="99" stroke="#444466" stroke-width="1"/><text x="140" y="103" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">16</text><circle cx="307" cy="96" r="5" fill="#6272a4" opacity="0.9"><title>Position 11</title></circle><circle cx="607" cy="96" r="5" fill="#6272a4" opacity="0.9"><title>Position 2</title></circle><text x="132" y="134" text-anchor="end" dominant-baseline="middle" fill="#9990a8" font-size="12" font-family="Georgia,serif">Mixed</text><line x1="140" y1="134" x2="640" y2="134" stroke="#333355" stroke-width="1"/><line x1="640" y1="131" x2="640" y2="137" stroke="#444466" stroke-width="1"/><text x="640" y="141" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">1</text><line x1="607" y1="131" x2="607" y2="137" stroke="#444466" stroke-width="1"/><text x="607" y="141" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">2</text><line x1="573" y1="131" x2="573" y2="137" stroke="#444466" stroke-width="1"/><line x1="540" y1="131" x2="540" y2="137" stroke="#444466" stroke-width="1"/><text x="540" y="141" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">4</text><line x1="507" y1="131" x2="507" y2="137" stroke="#444466" stroke-width="1"/><line x1="473" y1="131" x2="473" y2="137" stroke="#444466" stroke-width="1"/><text x="473" y="141" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">6</text><line x1="440" y1="131" x2="440" y2="137" stroke="#444466" stroke-width="1"/><line x1="407" y1="131" x2="407" y2="137" stroke="#444466" stroke-width="1"/><text x="407" y="141" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">8</text><line x1="373" y1="131" x2="373" y2="137" stroke="#444466" stroke-width="1"/><line x1="340" y1="131" x2="340" y2="137" stroke="#444466" stroke-width="1"/><text x="340" y="141" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">10</text><line x1="307" y1="131" x2="307" y2="137" stroke="#444466" stroke-width="1"/><line x1="273" y1="131" x2="273" y2="137" stroke="#444466" stroke-width="1"/><text x="273" y="141" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">12</text><line x1="240" y1="131" x2="240" y2="137" stroke="#444466" stroke-width="1"/><line x1="207" y1="131" x2="207" y2="137" stroke="#444466" stroke-width="1"/><text x="207" y="141" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">14</text><line x1="173" y1="131" x2="173" y2="137" stroke="#444466" stroke-width="1"/><line x1="140" y1="131" x2="140" y2="137" stroke="#444466" stroke-width="1"/><text x="140" y="141" text-anchor="middle" dominant-baseline="hanging" fill="#555577" font-size="9" font-family="monospace">16</text><circle cx="373" cy="134" r="5" fill="#6272a4" opacity="0.9"><title>Position 9</title></circle></svg>
+</div>
+
+
+<div class="section">
+  <div class="section-title">Top 10 Cards by Total Copies</div>
+  <table>
+    <thead><tr><th>#</th><th>Card Name</th><th>Copies</th><th>Decks</th><th>Avg/Deck</th></tr></thead>
+    <tbody>
+      
+      <tr>
+        <td class="rank num">1.</td>
+        <td>Villein</td>
+        <td class="num">31</td>
+        <td class="num">8</td>
+        <td class="num">3.9</td>
+      </tr>
+      
+      <tr>
+        <td class="rank num">2.</td>
+        <td>Organized Resistance</td>
+        <td class="num">25</td>
+        <td class="num">2</td>
+        <td class="num">12.5</td>
+      </tr>
+      
+      <tr>
+        <td class="rank num">3.</td>
+        <td>Telepathic Misdirection</td>
+        <td class="num">22</td>
+        <td class="num">4</td>
+        <td class="num">5.5</td>
+      </tr>
+      
+      <tr>
+        <td class="rank num">4.</td>
+        <td>Earth Meld</td>
+        <td class="num">20</td>
+        <td class="num">2</td>
+        <td class="num">10.0</td>
+      </tr>
+      
+      <tr>
+        <td class="rank num">5.</td>
+        <td>Form of Mist</td>
+        <td class="num">20</td>
+        <td class="num">3</td>
+        <td class="num">6.7</td>
+      </tr>
+      
+      <tr>
+        <td class="rank num">6.</td>
+        <td>Lost in Crowds</td>
+        <td class="num">20</td>
+        <td class="num">4</td>
+        <td class="num">5.0</td>
+      </tr>
+      
+      <tr>
+        <td class="rank num">7.</td>
+        <td>Eyes of Argus</td>
+        <td class="num">18</td>
+        <td class="num">4</td>
+        <td class="num">4.5</td>
+      </tr>
+      
+      <tr>
+        <td class="rank num">8.</td>
+        <td>Pursuit</td>
+        <td class="num">18</td>
+        <td class="num">2</td>
+        <td class="num">9.0</td>
+      </tr>
+      
+      <tr>
+        <td class="rank num">9.</td>
+        <td>Parity Shift</td>
+        <td class="num">16</td>
+        <td class="num">3</td>
+        <td class="num">5.3</td>
+      </tr>
+      
+      <tr>
+        <td class="rank num">10.</td>
+        <td>Govern the Unaligned</td>
+        <td class="num">15</td>
+        <td class="num">2</td>
+        <td class="num">7.5</td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
+
+<div class="section">
+  <div class="section-title">Top 10 Cards by Number of Decks</div>
+  <table>
+    <thead><tr><th>#</th><th>Card Name</th><th>Decks</th><th>Copies</th><th>Avg/Deck</th></tr></thead>
+    <tbody>
+      
+      <tr>
+        <td class="rank num">1.</td>
+        <td>Villein</td>
+        <td class="num">8</td>
+        <td class="num">31</td>
+        <td class="num">3.9</td>
+      </tr>
+      
+      <tr>
+        <td class="rank num">2.</td>
+        <td>Wider View</td>
+        <td class="num">8</td>
+        <td class="num">12</td>
+        <td class="num">1.5</td>
+      </tr>
+      
+      <tr>
+        <td class="rank num">3.</td>
+        <td>Telepathic Misdirection</td>
+        <td class="num">4</td>
+        <td class="num">22</td>
+        <td class="num">5.5</td>
+      </tr>
+      
+      <tr>
+        <td class="rank num">4.</td>
+        <td>Lost in Crowds</td>
+        <td class="num">4</td>
+        <td class="num">20</td>
+        <td class="num">5.0</td>
+      </tr>
+      
+      <tr>
+        <td class="rank num">5.</td>
+        <td>Eyes of Argus</td>
+        <td class="num">4</td>
+        <td class="num">18</td>
+        <td class="num">4.5</td>
+      </tr>
+      
+      <tr>
+        <td class="rank num">6.</td>
+        <td>My Enemy&#39;s Enemy</td>
+        <td class="num">4</td>
+        <td class="num">8</td>
+        <td class="num">2.0</td>
+      </tr>
+      
+      <tr>
+        <td class="rank num">7.</td>
+        <td>Dreams of the Sphinx</td>
+        <td class="num">4</td>
+        <td class="num">7</td>
+        <td class="num">1.8</td>
+      </tr>
+      
+      <tr>
+        <td class="rank num">8.</td>
+        <td>Heart of Nizchetus</td>
+        <td class="num">4</td>
+        <td class="num">5</td>
+        <td class="num">1.2</td>
+      </tr>
+      
+      <tr>
+        <td class="rank num">9.</td>
+        <td>Powerbase: Montreal</td>
+        <td class="num">4</td>
+        <td class="num">4</td>
+        <td class="num">1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="rank num">10.</td>
+        <td>Form of Mist</td>
+        <td class="num">3</td>
+        <td class="num">20</td>
+        <td class="num">6.7</td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
+
+<div class="section">
+  <div class="section-title">Jankiest 10 Cards (fewest TWDA appearances, excludes cards &lt;2 years old)</div>
+  <table>
+    <thead><tr><th>#</th><th>Card Name</th><th>TWDA Decks</th></tr></thead>
+    <tbody>
+      
+      <tr>
+        <td class="rank num">1.</td>
+        <td>Inside Dirt</td>
+        <td class="num">8</td>
+      </tr>
+      
+      <tr>
+        <td class="rank num">2.</td>
+        <td>Smoke and Mirrors</td>
+        <td class="num">9</td>
+      </tr>
+      
+      <tr>
+        <td class="rank num">3.</td>
+        <td>Prophecies of Gehenna</td>
+        <td class="num">9</td>
+      </tr>
+      
+      <tr>
+        <td class="rank num">4.</td>
+        <td>Adhocracy</td>
+        <td class="num">10</td>
+      </tr>
+      
+      <tr>
+        <td class="rank num">5.</td>
+        <td>Stolen Police Cruiser</td>
+        <td class="num">13</td>
+      </tr>
+      
+      <tr>
+        <td class="rank num">6.</td>
+        <td>Chameleon</td>
+        <td class="num">13</td>
+      </tr>
+      
+      <tr>
+        <td class="rank num">7.</td>
+        <td>The Status Perfectus</td>
+        <td class="num">15</td>
+      </tr>
+      
+      <tr>
+        <td class="rank num">8.</td>
+        <td>Quick Meld</td>
+        <td class="num">19</td>
+      </tr>
+      
+      <tr>
+        <td class="rank num">9.</td>
+        <td>Crypt&#39;s Sons</td>
+        <td class="num">21</td>
+      </tr>
+      
+      <tr>
+        <td class="rank num">10.</td>
+        <td>Creeping Sabotage</td>
+        <td class="num">21</td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
+
+</div>
+
+<script>
+Chart.defaults.color = '#9990a8';
+Chart.defaults.borderColor = '#2a2a40';
+
+const pieColors = [
+  '#8b1a1a','#c0392b','#e74c3c','#e67e22','#f39c12',
+  '#27ae60','#2ecc71','#16a085','#2980b9','#8e44ad',
+  '#6c3483','#1abc9c','#d35400','#c9a227','#7f8c8d',
+  '#bdc3c7','#2c3e50','#95a5a6','#f8c471','#a8d8ea'
+];
+
+function makePieConfig(labels, counts, positions, hasStandings) {
+  return {
+    type: 'pie',
+    data: {
+      labels: labels,
+      datasets: [{
+        data: counts,
+        backgroundColor: pieColors.slice(0, labels.length),
+        borderColor: '#0d0d14',
+        borderWidth: 2,
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: {
+          position: 'bottom',
+          labels: { color: '#e8e4d9', padding: 10, font: { size: 11 } }
+        },
+        tooltip: {
+          callbacks: {
+            label: function(ctx) {
+              const total = ctx.dataset.data.reduce((a, b) => a + b, 0);
+              const pct = (ctx.parsed / total * 100).toFixed(1);
+              return ' ' + ctx.label + ': ' + ctx.parsed + ' (' + pct + '%)';
+            },
+            afterLabel: function(ctx) {
+              if (!hasStandings || !positions || positions.length === 0) return '';
+              const pos = positions[ctx.dataIndex];
+              if (!pos || pos.length === 0) return '';
+              const sorted = pos.slice().sort((a, b) => a - b);
+              return ' Positions: ' + sorted.join(', ');
+            }
+          }
+        }
+      }
+    }
+  };
+}
+
+new Chart(document.getElementById('clanChart'),
+  makePieConfig(
+    ["Malkavian","Ministry","Toreador","Banu Haqim","Gangrel","Nosferatu antitribu","Tremere"],
+    [2,2,2,1,1,1,1],
+    [[16,2],[10,1],[14,12],[2],[2],[11],[9]],
+     true 
+  )
+);
+
+new Chart(document.getElementById('sectChart'),
+  makePieConfig(
+    ["Camarilla","Anarch","Sabbat","Mixed"],
+    [4,3,2,1],
+    [[16,2,14,12],[10,2,1],[11,2],[9]],
+     true 
+  )
+);
+
+new Chart(document.getElementById('capsChart'),
+  makePieConfig(
+    ["Midcaps","Bigcaps","Weenies","Mixed"],
+    [5,2,2,1],
+    [[9,10,16,1,2],[14,12],[2,11],[2]],
+     true 
+  )
+);
+
+new Chart(document.getElementById('capsHistChart'), {
+  type: 'bar',
+  data: {
+    labels: ["Cap 1","Cap 2","Cap 3","Cap 4","Cap 5","Cap 6","Cap 7","Cap 8","Cap 9","Cap 10","Cap 11"],
+    datasets: [{
+      label: 'Vampires',
+      data: [0,4,7,7,12,29,27,21,12,1,0],
+      backgroundColor: '#8b1a1a',
+      borderColor: '#c0392b',
+      borderWidth: 1,
+    }]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: { legend: { display: false } },
+    scales: {
+      x: { grid: { color: '#2a2a40' }, ticks: { color: '#9990a8' } },
+      y: { grid: { color: '#2a2a40' }, ticks: { color: '#9990a8' }, beginAtZero: true }
+    }
+  }
+});
+
+new Chart(document.getElementById('groupHistChart'), {
+  type: 'bar',
+  data: {
+    labels: ["G1","G2","G3","G4","G5","G6","G7"],
+    datasets: [{
+      label: 'Vampires',
+      data: [0,0,8,16,13,66,16],
+      backgroundColor: '#2980b9',
+      borderColor: '#3498db',
+      borderWidth: 1,
+    }]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: { legend: { display: false } },
+    scales: {
+      x: { grid: { color: '#2a2a40' }, ticks: { color: '#9990a8' } },
+      y: { grid: { color: '#2a2a40' }, ticks: { color: '#9990a8' }, beginAtZero: true }
+    }
+  }
+});
+</script>
+</body>
+</html>
