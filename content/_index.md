@@ -63,9 +63,9 @@ Města s aktivní komunitou mají svého místního koordinátora, tzv. prince. 
 
 <ul>
 <li><s><strong>Jihlava</strong>: 29. listopad 2025</s> (<a href="https://www.vekn.net/event-calendar/event/12654">výsledky</a>)</li>
-<li><strong>Praha</strong>: 24. leden 2026 (<a href="https://www.vekn.net/event-calendar/event/12884">info</a>)</li>
-<li><strong>Lichnov</strong>: 14. únor 2026<!-- (<a href="https://www.vekn.net/event-calendar/event/12073">výsledky</a>)--></li>
-<li><strong>Hradec Králové</strong>: 18. duben 2026<!-- (<a href="https://www.vekn.net/event-calendar/event/12229">výsledky</a>)--></li>
+<li><s><strong>Praha</strong>: 24. leden 2026</s> (<a href="https://www.vekn.net/event-calendar/event/12884">výsledky</a>)</li>
+<li><s><strong>Lichnov</strong>: 14. únor 2026</s> (<a href="https://www.vekn.net/event-calendar/event/13012">výsledky</a>)</li>
+<li><s><strong>Hradec Králové</strong>: 18. duben 2026</s> (<a href="https://www.vekn.net/event-calendar/event/13165">výsledky</a>)</li>
 <li><strong>Olomouc</strong>: 16. květen 2026<!-- (<a href="https://www.vekn.net/event-calendar/event/12358">výsledky</a>)--></li>
 <li><strong>Brno</strong>: 13. červen 2026<!-- (<a href="https://www.vekn.net/event-calendar/event/12357">výsledky</a>)--></li>
 </ul>
