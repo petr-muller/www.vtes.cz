@@ -73,8 +73,8 @@ The top players of the series play a special finals held at the Pulled Fang tour
 <li><s><strong>Prague</strong>: January 24th 2026</s> (<a href="https://www.vekn.net/event-calendar/event/12884">results</a>)</li>
 <li><s><strong>Lichnov</strong>: February 14th 2026</s> (<a href="https://www.vekn.net/event-calendar/event/13012">results</a>)</li>
 <li><s><strong>Hradec Králové</strong>: April 18th 2026</s> (<a href="https://www.vekn.net/event-calendar/event/13165">results</a>)</li>
-<li><strong>Olomouc</strong>: May 16th 2026<!-- (<a href="https://www.vekn.net/event-calendar/event/12358">results</a>)--></li>
-<li><strong>Brno</strong>: June 13th 2026<!-- (<a href="https://www.vekn.net/event-calendar/event/12357">results</a>)--></li>
+<li><s><strong>Olomouc</strong>: May 16th 2026</s> (<a href="https://www.vekn.net/event-calendar/event/13259">results</a>)</li>
+<li><s><strong>Brno</strong>: June 13th 2026</s> (<a href="https://www.vekn.net/event-calendar/event/13339">results</a>)</li>
 </ul>
 
 {{< /timelineItem >}}

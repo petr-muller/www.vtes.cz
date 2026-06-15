@@ -66,8 +66,8 @@ Města s aktivní komunitou mají svého místního koordinátora, tzv. prince. 
 <li><s><strong>Praha</strong>: 24. leden 2026</s> (<a href="https://www.vekn.net/event-calendar/event/12884">výsledky</a>)</li>
 <li><s><strong>Lichnov</strong>: 14. únor 2026</s> (<a href="https://www.vekn.net/event-calendar/event/13012">výsledky</a>)</li>
 <li><s><strong>Hradec Králové</strong>: 18. duben 2026</s> (<a href="https://www.vekn.net/event-calendar/event/13165">výsledky</a>)</li>
-<li><strong>Olomouc</strong>: 16. květen 2026<!-- (<a href="https://www.vekn.net/event-calendar/event/12358">výsledky</a>)--></li>
-<li><strong>Brno</strong>: 13. červen 2026<!-- (<a href="https://www.vekn.net/event-calendar/event/12357">výsledky</a>)--></li>
+<li><s><strong>Olomouc</strong>: 16. květen 2026</s> (<a href="https://www.vekn.net/event-calendar/event/13259">výsledky</a>)</li>
+<li><s><strong>Brno</strong>: 13. červen 2026</s> (<a href="https://www.vekn.net/event-calendar/event/13339">výsledky</a>)</li>
 </ul>
 
 {{< /timelineItem >}}
