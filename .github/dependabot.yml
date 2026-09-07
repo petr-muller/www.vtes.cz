@@ -1,0 +1,21 @@
+version: 2
+updates:
+  # GitHub Actions used by the build/deploy workflow.
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
+    commit-message:
+      prefix: "Bump"
+    groups:
+      actions:
+        patterns:
+          - "*"
+
+  # The Blowfish theme, consumed as a Hugo (Go) module via go.mod.
+  - package-ecosystem: gomod
+    directory: /
+    schedule:
+      interval: monthly
+    commit-message:
+      prefix: "Bump"
