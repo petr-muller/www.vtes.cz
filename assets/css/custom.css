@@ -1,0 +1,18 @@
+/* Site-specific styling, concatenated after the theme's compiled CSS.
+ *
+ * Blowfish ships a *prebuilt* Tailwind bundle, compiled from the theme's own
+ * markup only - it does not scan this project's layouts. Any Tailwind utility
+ * that the theme does not itself use is therefore absent from the bundle and
+ * silently does nothing here. Styling that belongs to this site goes in this
+ * file as plain CSS instead of being expressed as utility classes. */
+
+/* Dark Pack attribution logo in the footer.
+ *
+ * The footer override sized this with max-h-[5rem]/max-w-[5rem]. Those
+ * arbitrary utilities happened to be in Blowfish v2's bundle because the v2
+ * footer used them itself; v3 dropped its logo markup, so they disappeared and
+ * the image fell back to its intrinsic size. Same 5rem cap, stated directly. */
+img.logo {
+  max-height: 5rem;
+  max-width: 5rem;
+}
