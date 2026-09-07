@@ -56,18 +56,18 @@ Města s aktivní komunitou mají svého místního koordinátora, tzv. prince. 
 <p>České mistrovství republiky, nazvané <strong>"Pulled Fang"</strong> se tradičně koná na přelomu srpna a září.</p>
 
 <ul>
-<li><strong>Pulled Fang #15</strong>: 4-6. září 2026, Sázava, Nový Rychnov<!-- (<a href="https://www.vekn.net/event-calendar/event/12421">VEKN</a>|<a href="https://www.facebook.com/events/700278652870661">FB</a>)--></li>
+<li><strong>Pulled Fang #16</strong>: 3-5. září 2027<!-- (<a href="https://www.vekn.net/event-calendar/event/12421">VEKN</a>|<a href="https://www.facebook.com/events/700278652870661">FB</a>)--></li>
 </ul>
 
 <p>Během roku princové jednotlivých měst organizují jednotlivé turnaje série <strong>"Road to Pulled Fang"</strong>, které dohromady tvoří mini-ligu. Hráči na horních místech hrají na turnaji Pulled Fang speciální finále celé série:</p>
 
 <ul>
-<li><s><strong>Jihlava</strong>: 29. listopad 2025</s> (<a href="https://www.vekn.net/event-calendar/event/12654">výsledky</a>)</li>
-<li><s><strong>Praha</strong>: 24. leden 2026</s> (<a href="https://www.vekn.net/event-calendar/event/12884">výsledky</a>)</li>
-<li><s><strong>Lichnov</strong>: 14. únor 2026</s> (<a href="https://www.vekn.net/event-calendar/event/13012">výsledky</a>)</li>
-<li><s><strong>Hradec Králové</strong>: 18. duben 2026</s> (<a href="https://www.vekn.net/event-calendar/event/13165">výsledky</a>)</li>
-<li><s><strong>Olomouc</strong>: 16. květen 2026</s> (<a href="https://www.vekn.net/event-calendar/event/13259">výsledky</a>)</li>
-<li><s><strong>Brno</strong>: 13. červen 2026</s> (<a href="https://www.vekn.net/event-calendar/event/13339">výsledky</a>)</li>
+<li><strong>Jihlava</strong>: 14. listopad 2026<!-- (<a href="https://www.vekn.net/event-calendar/event/12654">výsledky</a>)--></li>
+<li><strong>Praha</strong>: 23. leden 2027<!-- (<a href="https://www.vekn.net/event-calendar/event/12884">výsledky</a>)--></li>
+<li><strong>Lichnov</strong>: 6. únor 2027<!-- (<a href="https://www.vekn.net/event-calendar/event/13012">výsledky</a>)--></li>
+<li><strong>Hradec Králové</strong>: 17. duben 2027<!-- (<a href="https://www.vekn.net/event-calendar/event/13165">výsledky</a>)--></li>
+<li><strong>Olomouc</strong>: 15. květen 2027<!-- (<a href="https://www.vekn.net/event-calendar/event/13259">výsledky</a>)--></li>
+<li><strong>Brno</strong>: 26. červen 2027<!-- (<a href="https://www.vekn.net/event-calendar/event/13339">výsledky</a>)--></li>
 </ul>
 
 {{< /timelineItem >}}
