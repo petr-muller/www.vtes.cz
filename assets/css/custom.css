@@ -16,3 +16,14 @@ img.logo {
   max-height: 5rem;
   max-width: 5rem;
 }
+
+/* Timeline panels on the homepage.
+ *
+ * These sit over the background image and were readable because of a
+ * backdrop blur. The bare `backdrop-blur` utility was removed in Tailwind v4
+ * (it is `backdrop-blur-sm` there), so the v3 bundle no longer defines it and
+ * the panels went fully see-through. blur(8px) is what `backdrop-blur` meant. */
+.timeline-item {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
