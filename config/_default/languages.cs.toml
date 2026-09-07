@@ -1,5 +1,5 @@
-languageCode = "cs"
-languageName = "Czech"
+locale = "cs"
+label = "Czech"
 weight = 1
 title = ""
 

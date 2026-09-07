@@ -1,0 +1,48 @@
+/* Site-specific styling, concatenated after the theme's compiled CSS.
+ *
+ * Blowfish ships a *prebuilt* Tailwind bundle, compiled from the theme's own
+ * markup only - it does not scan this project's layouts. Any Tailwind utility
+ * that the theme does not itself use is therefore absent from the bundle and
+ * silently does nothing here. Styling that belongs to this site goes in this
+ * file as plain CSS instead of being expressed as utility classes. */
+
+/* Dark Pack attribution logo in the footer.
+ *
+ * The footer override sized this with max-h-[5rem]/max-w-[5rem]. Those
+ * arbitrary utilities happened to be in Blowfish v2's bundle because the v2
+ * footer used them itself; v3 dropped its logo markup, so they disappeared and
+ * the image fell back to its intrinsic size. Same 5rem cap, stated directly. */
+img.logo {
+  max-height: 5rem;
+  max-width: 5rem;
+}
+
+/* Content column width.
+ *
+ * Blowfish caps readable content at 65ch. `ch` is the width of the "0" glyph,
+ * so the column tracks whatever the default font resolves to - and v3 changed
+ * --font-sans from `ui-sans-serif, system-ui, ...` to a stack starting at
+ * -apple-system/Segoe UI/Roboto, which narrowed the column. Widen it back.
+ * One knob; still font-relative, so a future theme font change will move it. */
+:root {
+  --content-width: 79ch; /* theme default is 65ch */
+}
+
+/* The article body, page header/footer and taxonomy lists use .max-w-prose;
+ * the homepage timeline uses .prose itself. Wrappers that deliberately opt out
+ * with .max-w-full (the outer <article>) must keep their full width. */
+.max-w-prose,
+.prose:not(.max-w-full) {
+  max-width: var(--content-width);
+}
+
+/* Timeline panels on the homepage.
+ *
+ * These sit over the background image and were readable because of a
+ * backdrop blur. The bare `backdrop-blur` utility was removed in Tailwind v4
+ * (it is `backdrop-blur-sm` there), so the v3 bundle no longer defines it and
+ * the panels went fully see-through. blur(8px) is what `backdrop-blur` meant. */
+.timeline-item {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
