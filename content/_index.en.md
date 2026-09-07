@@ -62,19 +62,19 @@ To get familiar with the basic rules, watch the following 10-minute video tutori
 <p>Czech national championship, called <strong>"Pulled Fang"</strong>, is traditionally held between August and September.</p>
 
 <ul>
-<li><strong>Pulled Fang #15</strong>: September 4-6th 2026, Sázava, Nový Rychnov<!-- (<a href="https://www.vekn.net/event-calendar/event/12421">VEKN</a>|<a href="https://www.facebook.com/events/700278652870661">FB</a>)--></li>
+<li><strong>Pulled Fang #16</strong>: September 3-5th 2027<!-- (<a href="https://www.vekn.net/event-calendar/event/12421">VEKN</a>|<a href="https://www.facebook.com/events/700278652870661">FB</a>)--></li>
 </ul>
 
 <p>Local princes organize individual tournaments of the <strong>"Road to Pulled Fang"</strong> throughout the year.
 The top players of the series play a special finals held at the Pulled Fang tournament:</p>
 
 <ul>
-<li><s><strong>Jihlava</strong>: November 29th 2025</s> (<a href="https://www.vekn.net/event-calendar/event/12654">results</a>)</li>
-<li><s><strong>Prague</strong>: January 24th 2026</s> (<a href="https://www.vekn.net/event-calendar/event/12884">results</a>)</li>
-<li><s><strong>Lichnov</strong>: February 14th 2026</s> (<a href="https://www.vekn.net/event-calendar/event/13012">results</a>)</li>
-<li><s><strong>Hradec Králové</strong>: April 18th 2026</s> (<a href="https://www.vekn.net/event-calendar/event/13165">results</a>)</li>
-<li><s><strong>Olomouc</strong>: May 16th 2026</s> (<a href="https://www.vekn.net/event-calendar/event/13259">results</a>)</li>
-<li><s><strong>Brno</strong>: June 13th 2026</s> (<a href="https://www.vekn.net/event-calendar/event/13339">results</a>)</li>
+<li><strong>Jihlava</strong>: November 14th 2026<!-- (<a href="https://www.vekn.net/event-calendar/event/12654">results</a>)--></li>
+<li><strong>Prague</strong>: January 23rd 2027<!-- (<a href="https://www.vekn.net/event-calendar/event/12884">results</a>)--></li>
+<li><strong>Lichnov</strong>: February 6th 2027<!-- (<a href="https://www.vekn.net/event-calendar/event/13012">results</a>)--></li>
+<li><strong>Hradec Králové</strong>: April 17th 2027<!-- (<a href="https://www.vekn.net/event-calendar/event/13165">results</a>)--></li>
+<li><strong>Olomouc</strong>: May 15th 2027<!-- (<a href="https://www.vekn.net/event-calendar/event/13259">results</a>)--></li>
+<li><strong>Brno</strong>: June 26th 2027<!-- (<a href="https://www.vekn.net/event-calendar/event/13339">results</a>)--></li>
 </ul>
 
 {{< /timelineItem >}}
