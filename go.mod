@@ -1,5 +1,5 @@
 module github.com/petr-muller/www.vtes.cz
 
-go 1.21
+go 1.24
 
-require github.com/nunocoracao/blowfish/v2 v2.92.0 // indirect
+require github.com/nunocoracao/blowfish/v3 v3.6.0
