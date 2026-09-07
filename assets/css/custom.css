@@ -25,7 +25,7 @@ img.logo {
  * -apple-system/Segoe UI/Roboto, which narrowed the column. Widen it back.
  * One knob; still font-relative, so a future theme font change will move it. */
 :root {
-  --content-width: 72ch; /* theme default is 65ch */
+  --content-width: 79ch; /* theme default is 65ch */
 }
 
 /* The article body, page header/footer and taxonomy lists use .max-w-prose;
