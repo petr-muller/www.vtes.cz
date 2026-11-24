@@ -55,8 +55,7 @@ jobs:
       uses: shimataro/ssh-key-action@v2
       with:
         key: ${{ secrets.DEPLOY_KEY }}
-        known_hosts: 'placeholder'
-    - name: Adding Known Hosts
-      run: ssh-keyscan -H ${{ secrets.DEPLOY_HOST_IP }} >> ~/.ssh/known_hosts
+        # Pinned host key (verified out of band); never trust-on-first-use via ssh-keyscan.
+        known_hosts: ${{ secrets.DEPLOY_KNOWN_HOSTS }}
     - name: Deploy with rsync
       run: rsync -avz --delete ./public/ ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST_IP }}:${{ secrets.DEPLOY_PATH }}
