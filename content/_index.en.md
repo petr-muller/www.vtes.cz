@@ -57,6 +57,8 @@ To get familiar with the basic rules, watch the following 10-minute video tutori
 
 {{< youtubeLite id="J6HyIxIzHcA" label="Codex KRCG: VtES Tutorial" >}}
 
+<p class="text-sm">The video plays from YouTube (youtube-nocookie.com). Nothing is loaded from YouTube until you click play.</p>
+
 {{< /timelineItem >}}
 
 {{< timelineItem icon="" header="Tournaments" >}}

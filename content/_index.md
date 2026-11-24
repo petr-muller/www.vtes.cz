@@ -53,6 +53,8 @@ Města s aktivní komunitou mají svého místního koordinátora, tzv. prince. 
 
 {{< youtubeLite id="J6HyIxIzHcA" label="Codex KRCG: VtES Tutoriál" params="cc_load_policy=1&cc_lang_pref=cs">}}
 
+<p class="text-sm">Video se přehrává ze serveru YouTube (youtube-nocookie.com). Do kliknutí na tlačítko přehrávání se z YouTube nic nenačítá.</p>
+
 {{< /timelineItem >}}
 
 {{< timelineItem icon="" header="Turnaje" >}}

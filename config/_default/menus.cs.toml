@@ -1,0 +1,7 @@
+# -- Footer Menu --
+# Displayed in the site footer. See menus.en.toml for the available parameters.
+
+[[footer]]
+  name = "Ochrana osobních údajů"
+  pageRef = "privacy"
+  weight = 10

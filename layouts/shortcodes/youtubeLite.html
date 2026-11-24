@@ -1,0 +1,28 @@
+{{- /*
+  Overrides Blowfish's youtubeLite shortcode so that nothing is requested from
+  Google until the visitor clicks play:
+
+  - The preview image is served locally from static/img/youtube/<id>.jpg
+    (lite-yt-embed only fetches the i.ytimg.com poster when the element has
+    no background image of its own). The build fails if the image is missing.
+  - Connection warming on hover/focus (preconnects to youtube-nocookie.com,
+    google.com and doubleclick.net) is disabled by marking the element class
+    as already preconnected. The theme loads the script synchronously in
+    <head>, so the class is defined by the time this runs.
+  - The play button's accessible label uses the `label` parameter (the theme
+    uses the video id).
+
+  Usage: {{< youtubeLite id="VIDEO_ID" label="Video title" params="..." >}}
+*/ -}}
+{{- $id := .Get "id" -}}
+{{- if not $id -}}
+  {{- errorf "youtubeLite: missing id in %s" .Position -}}
+{{- end -}}
+{{- $label := .Get "label" | default $id -}}
+{{- $params := .Get "params" -}}
+{{- $poster := printf "img/youtube/%s.jpg" $id -}}
+{{- if not (fileExists (printf "static/%s" $poster)) -}}
+  {{- errorf "youtubeLite: missing local preview image static/%s (download https://i.ytimg.com/vi/%s/hqdefault.jpg) in %s" $poster $id .Position -}}
+{{- end -}}
+<script>customElements.get('lite-youtube').preconnected = true;</script>
+<lite-youtube videoid="{{ $id }}" playlabel="{{ $label }}" title="{{ $label }}" params="{{ $params }}" style="background-image: url('{{ $poster | relURL }}');"></lite-youtube>
