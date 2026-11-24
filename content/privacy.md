@@ -36,9 +36,6 @@ Google Ireland Limited) načte až po kliknutí na tlačítko přehrávání. Do
 nenačítá. Po spuštění přehrávání zpracovává údaje o vás Google podle svých
 [zásad ochrany soukromí](https://policies.google.com/privacy); údaje mohou být předány i do USA.
 
-**Analýzy balíčků.** Stránky s analýzami turnajových balíčků načítají knihovnu pro grafy z CDN
-jsDelivr (cdn.jsdelivr.net), která se tak dozví vaši IP adresu.
-
 **Odkazy na jiné weby.** Web obsahuje odkazy na jiné stránky (např. Discord, Facebook, V:EKN, Archon).
 Za zpracování údajů na těchto webech odpovídají jejich provozovatelé.
 

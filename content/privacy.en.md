@@ -35,9 +35,6 @@ operated by Google Ireland Limited) only after you click play. Nothing is loaded
 that. Once you start playback, Google processes data about you under its
 [privacy policy](https://policies.google.com/privacy); data may be transferred to the USA.
 
-**Deck analyses.** The tournament deck analysis pages load a charting library from the jsDelivr CDN
-(cdn.jsdelivr.net), which therefore receives your IP address.
-
 **Links to other sites.** The site links to other websites (e.g. Discord, Facebook, V:EKN, Archon).
 Their operators are responsible for how those sites handle your data.
 
