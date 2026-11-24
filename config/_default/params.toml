@@ -6,6 +6,7 @@
 # https://blowfish.page/docs/configuration/#theme-parameters
 
 colorScheme = "blowfish"
+disableTextInHeader = true # site title is only used for the browser tab, not shown in the header
 defaultAppearance = "dark" # valid options: light or dark
 autoSwitchAppearance = false
 

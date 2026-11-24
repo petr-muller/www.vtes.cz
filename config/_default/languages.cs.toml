@@ -1,7 +1,7 @@
 locale = "cs"
 label = "Czech"
 weight = 1
-title = ""
+title = "Vampire: the Eternal Struggle v ČR"
 
 [params]
   displayName = "CZ"

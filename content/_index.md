@@ -16,15 +16,19 @@ Města s aktivní komunitou mají svého místního koordinátora, tzv. prince. 
  Česká komunita se schází na Discord serveru. Částečně aktivní je také skupina na Facebooku.
 </p>
  {{< button href="https://discord.gg/3WU6SsKGCY" >}}
- Discord&nbsp;server
+ Discord
+ {{< /button >}}
+ &nbsp;
+ {{< button href="https://www.vtes-praha.cz" >}}
+ VTES&nbsp;Praha
  {{< /button >}}
  &nbsp;
  {{< button href="https://www.vekn.net/vampire-elder-kindred-network/prince-list?country=CZ&sort=location" >}}
- Seznam&nbsp;princů&nbsp;v&nbsp;ČR
+ Princové&nbsp;v&nbsp;ČR
  {{< /button >}}
  &nbsp;
  {{< button href="https://www.facebook.com/groups/846126335924848" >}}
-   FB&nbsp;skupina
+ Facebook
  {{< /button >}}
 
 <p>Pro vyzkoušení hry jsou vhodné tzv. <a href="https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/new-blood-introductory-decks-for-vampire-the-eternal-struggle/">New Blood</a>
@@ -53,21 +57,21 @@ Města s aktivní komunitou mají svého místního koordinátora, tzv. prince. 
 
 {{< timelineItem icon="" header="Turnaje" >}}
 
-<p>České mistrovství republiky, nazvané <strong>"Pulled Fang"</strong> se tradičně koná na přelomu srpna a září.</p>
+<p>České mistrovství republiky, nazvané <strong>"Pulled Fang"</strong>, se tradičně koná začátkem září.</p>
 
 <ul>
-<li><strong>Pulled Fang #16</strong>: 3-5. září 2027<!-- (<a href="https://www.vekn.net/event-calendar/event/12421">VEKN</a>|<a href="https://www.facebook.com/events/700278652870661">FB</a>)--></li>
+<li><strong>Pulled Fang #16</strong>: 3.–5. září 2027<!-- (<a href="https://www.vekn.net/event-calendar/event/12421">VEKN</a>|<a href="https://www.facebook.com/events/700278652870661">FB</a>)--></li>
 </ul>
 
 <p>Během roku princové jednotlivých měst organizují jednotlivé turnaje série <strong>"Road to Pulled Fang"</strong>, které dohromady tvoří mini-ligu. Hráči na horních místech hrají na turnaji Pulled Fang speciální finále celé série:</p>
 
 <ul>
-<li><strong>Jihlava</strong>: 14. listopad 2026<!-- (<a href="https://www.vekn.net/event-calendar/event/12654">výsledky</a>)--></li>
-<li><strong>Praha</strong>: 23. leden 2027<!-- (<a href="https://www.vekn.net/event-calendar/event/12884">výsledky</a>)--></li>
-<li><strong>Lichnov</strong>: 6. únor 2027<!-- (<a href="https://www.vekn.net/event-calendar/event/13012">výsledky</a>)--></li>
-<li><strong>Hradec Králové</strong>: 17. duben 2027<!-- (<a href="https://www.vekn.net/event-calendar/event/13165">výsledky</a>)--></li>
-<li><strong>Olomouc</strong>: 15. květen 2027<!-- (<a href="https://www.vekn.net/event-calendar/event/13259">výsledky</a>)--></li>
-<li><strong>Brno</strong>: 26. červen 2027<!-- (<a href="https://www.vekn.net/event-calendar/event/13339">výsledky</a>)--></li>
+<li><strong>Jihlava</strong>: 14. listopadu 2026 (<a href="https://archon.vekn.net/tournaments/01a1720e-010c-72ea-90e8-dd4804448978">výsledky</a>)</li>
+<li><strong>Praha</strong>: 23. ledna 2027 (<a href="https://archon.vekn.net/tournaments/01a1f87a-913b-77c8-8b47-39843ad2ea92">info</a>)</li>
+<li><strong>Lichnov</strong>: 6. února 2027<!-- (<a href="https://www.vekn.net/event-calendar/event/13012">výsledky</a>)--></li>
+<li><strong>Hradec Králové</strong>: 17. dubna 2027<!-- (<a href="https://www.vekn.net/event-calendar/event/13165">výsledky</a>)--></li>
+<li><strong>Olomouc</strong>: 15. května 2027<!-- (<a href="https://www.vekn.net/event-calendar/event/13259">výsledky</a>)--></li>
+<li><strong>Brno</strong>: 26. června 2027<!-- (<a href="https://www.vekn.net/event-calendar/event/13339">výsledky</a>)--></li>
 </ul>
 
 {{< /timelineItem >}}
