@@ -74,6 +74,12 @@ Města s aktivní komunitou mají svého místního koordinátora, tzv. prince. 
 <li><strong>Brno</strong>: 26. června 2027<!-- (<a href="https://www.vekn.net/event-calendar/event/13339">výsledky</a>)--></li>
 </ul>
 
+<p>Přehled všech turnajů v ČR naleznete na Archonu.</p>
+
+ {{< button href="https://archon.vekn.net/tournaments?online=false&country=CZ" >}}
+ Turnaje&nbsp;v&nbsp;ČR
+ {{< /button >}}
+
 {{< /timelineItem >}}
 
 {{< timelineItem icon="" header="Další zdroje" >}}

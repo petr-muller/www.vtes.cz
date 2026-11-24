@@ -79,6 +79,12 @@ The top players of the series compete in a special final held at the Pulled Fang
 <li><strong>Brno</strong>: June 26th 2027<!-- (<a href="https://www.vekn.net/event-calendar/event/13339">results</a>)--></li>
 </ul>
 
+<p>All tournaments held in Czechia are listed on Archon.</p>
+
+ {{< button href="https://archon.vekn.net/tournaments?online=false&country=CZ" >}}
+ Tournaments&nbsp;in&nbsp;Czechia
+ {{< /button >}}
+
 {{< /timelineItem >}}
 
 {{< timelineItem icon="" header="Resources" >}}
