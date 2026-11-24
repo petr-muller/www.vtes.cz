@@ -1,5 +1,11 @@
 name: Build and Deploy Site
 on: push
+
+# A newer push to the same branch cancels any in-progress run, so an older
+# build can never finish deploying after (and overwrite) a newer one.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
   build:
     runs-on: ubuntu-latest
